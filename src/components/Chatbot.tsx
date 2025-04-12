@@ -150,9 +150,9 @@ const Chatbot: React.FC<ChatbotProps> = ({ name = "Ps. Yin" }) => {
   };
 
   const askAboutAppointment = () => {
-    const message = {
+    const message: Message = {
       text: "¿Te gustaría agendar una cita con alguno de nuestros psicólogos? Tenemos disponibles a la Ps. Marie, Ps. Ignacia, Ps. Catalina, Ps. Guido y Ps. Jissel.",
-      sender: "bot"
+      sender: "bot" as const
     };
     setMessages(prev => [...prev, message]);
     setWaitingForAppointmentResponse(true);
@@ -161,9 +161,9 @@ const Chatbot: React.FC<ChatbotProps> = ({ name = "Ps. Yin" }) => {
 
   const handleAppointmentResponse = (input: string) => {
     if (checkPositiveResponse(input)) {
-      const goodbyeMessage = {
+      const goodbyeMessage: Message = {
         text: "¡Me alegro mucho! Gracias por confiar en nosotros. Te dirigiré al calendario para que puedas agendar tu cita con el profesional de tu preferencia.",
-        sender: "bot"
+        sender: "bot" as const
       };
       setMessages(prev => [...prev, goodbyeMessage]);
       setTimeout(() => {
@@ -171,9 +171,9 @@ const Chatbot: React.FC<ChatbotProps> = ({ name = "Ps. Yin" }) => {
       }, 1500);
     } else if (checkNegativeResponse(input)) {
       setQuestionCount(count => count + 1);
-      const responseMessage = {
+      const responseMessage: Message = {
         text: "Entiendo perfectamente. Continuemos conversando y cuando te sientas preparado/a, puedes agendar una cita en el momento que lo consideres adecuado.",
-        sender: "bot"
+        sender: "bot" as const
       };
       setMessages(prev => [...prev, responseMessage]);
     }
@@ -181,9 +181,9 @@ const Chatbot: React.FC<ChatbotProps> = ({ name = "Ps. Yin" }) => {
   };
 
   const checkForFinalGoodbye = () => {
-    const goodbyeMessage = {
+    const goodbyeMessage: Message = {
       text: "Gracias por compartir conmigo. Te animo a que consideres agendar una cita cuando te sientas preparado/a. Nuestros profesionales estarán encantados de ayudarte en tu proceso. ¡Que tengas un excelente día!",
-      sender: "bot"
+      sender: "bot" as const
     };
     setMessages(prev => [...prev, goodbyeMessage]);
     setTimeout(() => {
@@ -220,9 +220,9 @@ const Chatbot: React.FC<ChatbotProps> = ({ name = "Ps. Yin" }) => {
   };
 
   const handleDirectScheduling = (input: string) => {
-    const goodbyeMessage = {
+    const goodbyeMessage: Message = {
       text: "¡Perfecto! Te dirigiré al calendario para que puedas agendar tu cita. Gracias por confiar en nosotros.",
-      sender: "bot"
+      sender: "bot" as const
     };
     setMessages(prev => [...prev, goodbyeMessage]);
     setTimeout(() => {
@@ -235,7 +235,10 @@ const Chatbot: React.FC<ChatbotProps> = ({ name = "Ps. Yin" }) => {
     if (input.trim() === "") return;
 
     // Add user message
-    const userMessage = { text: input, sender: "user" };
+    const userMessage: Message = { 
+      text: input, 
+      sender: "user" as const 
+    };
     setMessages((prev) => [...prev, userMessage]);
     
     if (checkForSchedulingRequest(input)) {

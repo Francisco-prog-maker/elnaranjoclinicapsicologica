@@ -4,12 +4,13 @@ import { Instagram, Mail, Phone } from "lucide-react";
 import { createGoogleCalendarUrl } from "@/lib/utils";
 
 interface FooterProps {
-  clinicName?: string;
-  phone?: string;
-  email?: string;
-  socialLinks?: {
-    instagram?: string;
+  clinicName: string;
+  phone: string;
+  email: string;
+  socialLinks: {
+    instagram: string;
   };
+  calendlyUrl: string;
 }
 
 const Footer = ({

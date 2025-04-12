@@ -12,12 +12,13 @@ import { Badge } from "./ui/badge";
 import TherapistDetailModal from "./TherapistDetailModal";
 
 interface TherapistCardProps {
-  name?: string;
-  image?: string;
-  credentials?: string;
-  specialties?: string[];
-  description?: string;
-  workTopics?: string[];
+  name: string;
+  image: string;
+  credentials: string;
+  specialties: string[];
+  description: string;
+  workTopics: string[];
+  onViewDetails: () => void;
 }
 
 const TherapistCard = ({
@@ -27,6 +28,7 @@ const TherapistCard = ({
   specialties = ["Ansiedad", "Depresión", "Trauma", "Terapia de Parejas"],
   description = "La Dra. Mackenzie se especializa en enfoques basados en evidencia para ayudar a los clientes a superar desafíos y mejorar su bienestar mental.",
   workTopics = ["Autoestima", "Relaciones", "Estrés", "Ansiedad", "Depresión"],
+  onViewDetails,
 }: TherapistCardProps) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -64,7 +66,10 @@ const TherapistCard = ({
         </CardContent>
         <CardFooter className="pt-2">
           <Button
-            onClick={() => setIsModalOpen(true)}
+            onClick={() => {
+              setIsModalOpen(true);
+              onViewDetails();
+            }}
             className="w-full bg-teal-600 hover:bg-teal-700 text-white"
           >
             Ver Perfil

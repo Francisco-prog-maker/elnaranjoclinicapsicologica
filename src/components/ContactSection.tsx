@@ -42,7 +42,10 @@ const ContactSection = () => {
   const [current, setCurrent] = React.useState(0);
 
   useEffect(() => {
+    const api = useApi();
     if (!api) return;
+
+    api.off("select", () => {}); // Añadimos el callback vacío requerido
 
     const interval = setInterval(() => {
       api.scrollNext();
