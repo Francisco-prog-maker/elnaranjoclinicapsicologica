@@ -44,7 +44,7 @@ npm run dev
 git add .
 git commit -m "descripción de tus cambios"
 git push origin main
-```
+``` 
 
 ### Netlify (Despliegue Automático)
 - Netlify detectará automáticamente los cambios en GitHub
