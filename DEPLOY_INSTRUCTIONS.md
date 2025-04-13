@@ -71,3 +71,18 @@ git push origin main
 - Siempre prueba los cambios localmente antes de hacer push
 - Los deploys son automáticos después de cada push a main
 - Mantén actualizado este documento con cualquier cambio en el proceso
+
+## Extras
+Tu despliegue en Netlify es gratuito y no tiene fecha de caducidad. Netlify ofrece un plan gratuito ("Starter") que incluye:
+
+Hosting ilimitado en el tiempo
+HTTPS automático
+Despliegue continuo desde GitHub
+Ancho de banda de 100GB/mes
+Builds ilimitados
+Tu sitio permanecerá en línea indefinidamente siempre que:
+
+Mantengas tu cuenta de Netlify activa
+No excedas los límites del plan gratuito (lo cual es poco probable para un sitio web normal)
+Tu repositorio de GitHub siga disponible
+Si en algún momento necesitas más recursos o características, Netlify ofrece planes de pago, pero para un sitio web como el tuyo, el plan gratuito es más que suficiente y no necesitarás actualizarlo a menos que tengas necesidades muy específicas de alto tráfico o características avanzadas.
