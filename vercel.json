@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "buildCommand": "npm install && npm run build",
-  "outputDirectory": "dist",
   "framework": "vite",
+  "buildCommand": "npx tsc && npx vite build",
+  "outputDirectory": "dist",
   "cleanUrls": true,
   "public": true,
   "rewrites": [
