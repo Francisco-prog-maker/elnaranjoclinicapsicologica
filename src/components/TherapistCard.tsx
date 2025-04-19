@@ -24,9 +24,9 @@ interface TherapistCardProps {
 const TherapistCard = ({
   name = "Psi. Marie Mackenzie",
   image = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
-  credentials = "Doctorado en Psicología Clínica",
+  credentials = "Psicóloga Clínica",
   specialties = ["Ansiedad", "Depresión", "Trauma", "Terapia de Parejas"],
-  description = "La Dra. Mackenzie se especializa en enfoques basados en evidencia para ayudar a los clientes a superar desafíos y mejorar su bienestar mental.",
+  description = "La Psi. Mackenzie se especializa en enfoques basados en evidencia para ayudar a los clientes a superar desafíos y mejorar su bienestar mental.",
   workTopics = ["Autoestima", "Relaciones", "Estrés", "Ansiedad", "Depresión"],
   onViewDetails,
 }: TherapistCardProps) => {
@@ -62,7 +62,9 @@ const TherapistCard = ({
               </Badge>
             ))}
           </div>
-          <p className="text-sm text-gray-700 line-clamp-3 text-ellipsis overflow-hidden leading-relaxed break-words">{description}</p>
+          <div className="h-[72px] overflow-hidden">
+            <p className="text-sm text-gray-700 leading-6">{description}</p>
+          </div>
         </CardContent>
         <CardFooter className="pt-2">
           <Button
