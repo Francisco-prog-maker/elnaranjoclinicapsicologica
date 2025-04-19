@@ -23,7 +23,8 @@ const Home: React.FC = () => {
         {/* Hero Section - No necesita padding porque tiene su propio diseño */}
         <div id="home">
           <HeroSection
-            title="¡La salud mental merece atención!"
+            title="Bienvenid@s a Clínica
+                   Psicológica El Naranjo"
             tagline="Nosotros ofrecemos herramientas terapéuticas"
             ctaText="Agendar una cita"
           />
