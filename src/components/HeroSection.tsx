@@ -47,7 +47,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         className="w-full h-full"
       >
         <CarouselContent>
-          {["/Fotos/patient0.jpg", "/Fotos/patient1.jpg", "/Fotos/patient2.jpg"].map((src, index) => (
+          {["/Fotos/1-scaled.jpg", "/Fotos/patient1.jpg", "/Fotos/patient2.jpg"].map((src, index) => (
             <CarouselItem key={index} className="w-full h-[700px]">
               <div className="relative w-full h-full">
                 <img
