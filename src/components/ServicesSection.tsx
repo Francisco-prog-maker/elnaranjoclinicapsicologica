@@ -14,7 +14,7 @@ interface ServicesSectionProps {
 
 const ServicesSection = ({
   title = "Nuestros Servicios",
-  subtitle = "Ofrecemos una variedad de servicios terapéuticos para apoyar tu bienestar mental",
+  subtitle = "En qué podemos ayudarte?",
 }: ServicesSectionProps) => {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -70,25 +70,25 @@ const ServicesSection = ({
         >
           <motion.div variants={itemVariants} className="w-full flex justify-center">
             <IndividualTherapyCard 
-              detailedInfo="Nuestras sesiones de terapia individual proporcionan un espacio seguro y confidencial donde puedes trabajar directamente con un terapeuta capacitado para abordar desafíos personales, explorar emociones y desarrollar estrategias de afrontamiento. Las sesiones generalmente duran 50 minutos y están adaptadas a tus necesidades y objetivos únicos." 
+              detailedInfo="La psicoterapia individual está pensada para quienes necesitan un tiempo y un lugar para sí. Aquí puedes explorar tus emociones, aprender a poner límites, trabajar la ansiedad, el estrés, el perfeccionismo, la autoestima o cualquier otra dificultad que esté interfiriendo en tu día a día. Nuestro enfoque es respetuoso, empático y adaptado a tus tiempos y necesidades." 
             />
           </motion.div>
 
           <motion.div variants={itemVariants} className="w-full flex justify-center">
             <CoupleTherapyCard 
-              detailedInfo="La terapia de parejas ayuda a los compañeros a mejorar su relación a través de una mejor comunicación, resolución de conflictos y comprensión más profunda. Nuestros terapeutas crean un ambiente neutral donde ambas personas pueden expresar sus preocupaciones, aprender a escuchar efectivamente y desarrollar estrategias para fortalecer su vínculo." 
+              detailedInfo="Esta terapia es un espacio conjunto para observar patrones relacionales, resolver conflictos de manera constructiva y reconectar con lo que les une. Trabajamos con parejas en distintas etapas (convivencia, crianza, crisis, decisiones importantes) desde una mirada que valida a ambas partes, promoviendo acuerdos y comprensión." 
             />
           </motion.div>
 
           <motion.div variants={itemVariants} className="w-full flex justify-center">
             <FamilyTherapyCard 
-              detailedInfo="La psicoterapia familiar es un espacio seguro donde toda la familia puede trabajar junta para mejorar la comunicación, resolver conflictos y fortalecer los lazos familiares. Nuestros terapeutas ayudan a identificar patrones disfuncionales, establecer límites saludables y desarrollar estrategias efectivas para una mejor convivencia familiar." 
+              detailedInfo="La familia es un sistema vivo, y cada integrante tiene un rol importante. Esta terapia ofrece herramientas para afrontar desafíos como conflictos entre padres e hijos, cambios familiares, duelos o dificultades en la convivencia. Promovemos un espacio donde cada voz sea escuchada y donde puedan avanzar juntos hacia una convivencia más armónica." 
             />
           </motion.div>
 
           <motion.div variants={itemVariants} className="w-full flex justify-center">
             <VocationalGuidanceCard 
-              detailedInfo="Nuestro servicio de orientación vocacional te ayuda a descubrir tu verdadera vocación a través de evaluaciones especializadas, asesoramiento personalizado y exploración de carreras. Trabajamos contigo para identificar tus fortalezas, intereses y valores, ayudándote a tomar decisiones informadas sobre tu futuro profesional." 
+              detailedInfo="Este servicio está diseñado para adolescentes o personas adultas que están en procesos de elección o cambio vocacional. A través de sesiones reflexivas, herramientas prácticas y autoconocimiento, te ayudamos a tomar decisiones informadas y alineadas con tu identidad, valores y proyecto de vida. No se trata solo de elegir una carrera, sino de conocerte mejor para proyectar tu futuro con sentido." 
             />
           </motion.div>
         </motion.div>

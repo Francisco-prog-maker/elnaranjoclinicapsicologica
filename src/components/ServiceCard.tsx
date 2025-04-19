@@ -111,7 +111,7 @@ export const IndividualTherapyCard = (
   <ServiceCard
     icon={<Heart className="h-10 w-10 text-rose-500" />}
     title="Terapia Individual"
-    description="Sesiones personalizadas enfocadas en el crecimiento personal y el abordaje de desafíos específicos."
+    description="Un espacio seguro y personalizado para escucharte, comprenderte y acompañarte en tu proceso de crecimiento personal y bienestar emocional."
     {...props}
   />
 );
@@ -120,7 +120,7 @@ export const CoupleTherapyCard = (props: Omit<ServiceCardProps, "icon">) => (
   <ServiceCard
     icon={<Users className="h-10 w-10 text-indigo-500" />}
     title="Terapia de Parejas"
-    description="Sesiones guiadas para mejorar la comunicación y resolver conflictos en las relaciones."
+    description="Acompañamiento para parejas que desean fortalecer su vínculo, mejorar la comunicación y reencontrarse desde el cuidado mutuo."
     {...props}
   />
 );
@@ -158,7 +158,7 @@ export const FamilyTherapyCard = (props: Omit<ServiceCardProps, "icon">) => (
   <ServiceCard
     icon={<Home className="h-10 w-10 text-emerald-500" />}
     title="Psicoterapia Familiar"
-    description="Terapia enfocada en mejorar la dinámica familiar, la comunicación y resolver conflictos entre los miembros de la familia."
+    description="Un lugar de encuentro para mejorar el diálogo, comprender las dinámicas familiares y construir vínculos más sanos."
     {...props}
   />
 );
@@ -167,7 +167,7 @@ export const VocationalGuidanceCard = (props: Omit<ServiceCardProps, "icon">) =>
   <ServiceCard
     icon={<GraduationCap className="h-10 w-10 text-amber-500" />}
     title="Orientación Vocacional"
-    description="Apoyo profesional para descubrir y desarrollar tu vocación, identificando tus intereses, habilidades y metas profesionales."
+    description="Un acompañamiento cercano para quienes están explorando qué camino seguir, conectando con sus intereses, fortalezas y sueños."
     {...props}
   />
 );

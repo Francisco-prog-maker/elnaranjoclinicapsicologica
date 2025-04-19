@@ -22,7 +22,7 @@ interface TherapistCardProps {
 }
 
 const TherapistCard = ({
-  name = "Dra. Marie Mackenzie",
+  name = "Psi. Marie Mackenzie",
   image = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
   credentials = "Doctorado en Psicología Clínica",
   specialties = ["Ansiedad", "Depresión", "Trauma", "Terapia de Parejas"],
