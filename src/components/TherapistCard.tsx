@@ -62,7 +62,7 @@ const TherapistCard = ({
               </Badge>
             ))}
           </div>
-          <p className="text-sm text-gray-700 max-h-[150px] overflow-y-auto pr-2">{description}</p>
+          <p className="text-sm text-gray-700 line-clamp-3">{description}</p>
         </CardContent>
         <CardFooter className="pt-2">
           <Button

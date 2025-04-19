@@ -74,7 +74,7 @@ const TherapistDetailModal: React.FC<TherapistDetailModalProps> = ({
               </div>
             </div>
 
-            <p className="text-gray-700 mb-6 text-base leading-relaxed">{therapist.description}</p>
+            <p className="text-gray-700 mb-6 text-base leading-relaxed bg-peach-50 p-4 rounded-lg">{therapist.description}</p>
 
             <div className="grid grid-cols-2 gap-4">
               <Card className="p-4 bg-peach-50">
