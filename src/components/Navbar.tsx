@@ -77,10 +77,10 @@ const Navbar = ({
               Contacto
             </a>
             <Button 
-              className="bg-teal-600 hover:bg-teal-700 text-white flex items-center gap-2"
+              className="bg-[#FFDAB9] hover:bg-[#FFE4C4] text-black flex items-center gap-2"
               onClick={handleAgendarCita}
             >
-              <Phone size={16} />
+              <Phone size={16} className="text-black" />
               Agendar Cita
             </Button>
           </div>
@@ -137,13 +137,13 @@ const Navbar = ({
               Contacto
             </a>
             <Button 
-              className="w-full bg-teal-600 hover:bg-teal-700 text-white flex items-center justify-center gap-2"
+              className="w-full bg-[#FFDAB9] hover:bg-[#FFE4C4] text-black flex items-center justify-center gap-2"
               onClick={() => {
                 handleAgendarCita();
                 setIsMenuOpen(false);
               }}
             >
-              <Phone size={16} />
+              <Phone size={16} className="text-black" />
               Agendar Cita
             </Button>
           </div>
