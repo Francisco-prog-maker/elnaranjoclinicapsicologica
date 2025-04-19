@@ -25,7 +25,7 @@ const TherapistsSection = ({
       name: "Psi. Marie Elaine Mackenzie",
       image: "/Fotos/Marie3.png",
       credentials: "Psicóloga Clínica y Fundadora ",
-      specialties: ["Ansiedad", "Depresión", "Trauma", "Terapia de Parejas", "Mindfulness"],
+      specialties: ["Ansiedad", "Bipolaridad", "Duelos", "Estrés", ],
       description:
         "Soy Marie Mackenzie, psicóloga y fundadora de la Clínica Psicológica El Naranjo. Me especializo en psicoterapia breve, con un enfoque humanista y experiencial, trabajando principalmente con adolescentes y adultos. Mi objetivo es ofrecer un acompañamiento cálido y profesional, donde cada paciente se sienta escuchado y comprendido.",
       workTopics: ["Autoestima", "Relaciones", "Estrés", "Desarrollo Personal", "Bienestar Emocional"],
@@ -64,7 +64,7 @@ const TherapistsSection = ({
     },
     {
       id: "4",
-      name: "Ps. Guido Bustamante",
+      name: "Ps. Guido Palma",
       image: "/Fotos/Guido1.jpg",
       credentials: "Psicólogo Clínico",
       specialties: [
@@ -80,7 +80,7 @@ const TherapistsSection = ({
     },
     {
       id: "5",
-      name: "Ps. Catalina",
+      name: "Ps. Catalina Hennigs",
       image: "/Fotos/Catalina1.jpg",
       credentials: "Psicóloga Clínica",
       specialties: [
