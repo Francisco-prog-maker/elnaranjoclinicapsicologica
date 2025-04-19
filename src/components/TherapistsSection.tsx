@@ -35,64 +35,40 @@ const TherapistsSection = ({
       name: "Ps. Ignacia Álvarez",
       image: "/Fotos/Ignacia1.jpg",
       credentials: "Psicóloga Clínica",
-      specialties: [
-        "Psicoterapia Individual",
-        "Terapia de Parejas",
-        "Desarrollo Personal",
-        "Manejo del Estrés",
-        "Mindfulness"
-      ],
+      specialties: ["Duelos", "Pensamientos", "Emociones", ],
       description:
         "Psicóloga Clínica especializada en el área Infanto-Juvenil y Adultos. Cuento con 5 años de experiencia en atención online, brindando apoyo terapéutico personalizado. Mi objetivo es acompañar a cada paciente en su proceso de crecimiento y bienestar emocional.",
-      workTopics: ["Relaciones Interpersonales", "Ansiedad", "Depresión", "Autoconocimiento", "Duelo"],
+      workTopics: ["Autoestima", "Heridas de la Infancia", "Dependencia Emocional", "Autoconocimiento", "Duelo"],
     },
     {
       id: "3",
       name: "Ps. Jissel Álvarez",
       image: "/Fotos/Jissel1.jpg",
       credentials: "Psicóloga Clínica",
-      specialties: [
-        "Terapia Individual",
-        "Desarrollo Personal",
-        "Manejo de Ansiedad",
-        "Terapia Familiar",
-        "Mindfulness"
-      ],
+      specialties: ["Ansiedad", "Depresión", "Pérdidas", ],
       description:
         "Psicóloga especialista en terapia sistémica breve, con enfoque en temáticas de género y violencia. Me dedico al desarrollo del autoconocimiento y bienestar emocional. Trabajo principalmente con adultos, ofreciendo un espacio seguro de escucha y reflexión donde pueden encontrar herramientas para su día a día.",
-      workTopics: ["Ansiedad Social", "Estrés Laboral", "Relaciones Familiares", "Autoestima", "Comunicación"],
+      workTopics: ["Ansiedad Social", "Traumas complejos", "Relaciones Familiares", "Conflictos de pareja", "Comunicación"],
     },
     {
       id: "4",
       name: "Ps. Guido Palma",
       image: "/Fotos/Guido1.jpg",
       credentials: "Psicólogo Clínico",
-      specialties: [
-        "Terapia Individual",
-        "Psicoterapia",
-        "Manejo del Estrés",
-        "Terapia de Pareja",
-        "Mindfulness"
-      ],
+      specialties: ["Ansiedad", "Duelo", "Trauma", ],
       description:
         "Psicólogo clínico comprometido con la salud mental. Mi enfoque se basa en reconocer la singularidad de cada persona para diseñar tratamientos personalizados. Me caracterizo por ser un profesional proactivo, accesible y empático, en constante actualización para brindar la mejor atención.",
-      workTopics: ["Manejo del Estrés", "Relaciones de Pareja", "Ansiedad", "Desarrollo Personal", "Bienestar"],
+      workTopics: ["Neurodivergencias", "Dificultades Relacionales", "Ansiedad", "Depresión", "Duelo"],
     },
     {
       id: "5",
       name: "Ps. Catalina Hennigs",
       image: "/Fotos/Catalina1.jpg",
       credentials: "Psicóloga Clínica",
-      specialties: [
-        "Terapia Individual",
-        "Desarrollo Personal",
-        "Psicoterapia",
-        "Terapia Familiar",
-        "Mindfulness"
-      ],
+      specialties: ["Ansiedad", "Depresión", "TEA", ],
       description:
         "Psicóloga clínica especializada en adultos, con atención online. Me enfoco en el tratamiento de trastornos del ánimo, ansiedad, depresión y dificultades en el neurodesarrollo, incluyendo TEA. Brindo apoyo en procesos de duelo y crisis vitales desde una perspectiva psicoanalítica.",
-      workTopics: ["Desarrollo Personal", "Relaciones Familiares", "Autoestima", "Manejo Emocional", "Bienestar"],
+      workTopics: ["Crisis Vitales", "Duelo", "Dificultades del neurodesarrollo (TEA)", "Manejo Emocional", "Trastornos del Ánimo"],
     },
   ],
 }: TherapistsSectionProps) => {
