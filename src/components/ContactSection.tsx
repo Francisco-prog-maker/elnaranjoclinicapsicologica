@@ -191,11 +191,11 @@ const ContactSection = () => {
                   )}
                 />
 
-                <Button
-                  type="submit"
-                  className="w-full bg-teal-600 hover:bg-teal-700"
+                <Button 
+                  type="submit" 
+                  className="w-full bg-[#FFDAB9] hover:bg-[#FFE4C4] text-black"
                 >
-                  Enviar Solicitud
+                  Enviar Mensaje
                 </Button>
               </form>
             </Form>

@@ -49,7 +49,7 @@ const TherapistDetailModal: React.FC<TherapistDetailModalProps> = ({
             </div>
             <Button
               onClick={handleAgendarCita}
-              className="w-full bg-teal-600 hover:bg-teal-700 text-white"
+              className="w-full bg-[#FFDAB9] hover:bg-[#FFE4C4] text-black"
             >
               Agendar
             </Button>

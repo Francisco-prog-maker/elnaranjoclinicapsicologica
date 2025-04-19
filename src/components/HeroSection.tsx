@@ -74,7 +74,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             </p>
             <Button
               size="lg"
-              className="bg-teal-600 hover:bg-teal-700 text-white px-10 py-7 text-xl rounded-md transition-all duration-300 hover:scale-105 shadow-lg"
+              className="bg-[#FFDAB9] hover:bg-[#FFE4C4] text-black px-10 py-7 text-xl rounded-md transition-all duration-300 hover:scale-105 shadow-lg"
               onClick={handleAgendarCita}
             >
               {ctaText}

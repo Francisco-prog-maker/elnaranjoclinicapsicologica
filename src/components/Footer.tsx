@@ -142,9 +142,8 @@ const Footer = ({
               </div>
               <div className="mt-4">
                 <Button
-                  variant="outline"
-                  className="border-teal-600 text-teal-600 hover:bg-teal-600 hover:text-white"
                   onClick={handleAgendarCita}
+                  className="bg-[#FFDAB9] hover:bg-[#FFE4C4] text-black border-[#FFDAB9]"
                 >
                   Agendar Cita
                 </Button>

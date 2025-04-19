@@ -83,7 +83,7 @@ const ServiceCard = ({
           <CardFooter className="pt-0">
             <Button
               variant="outline"
-              className="w-full border-blue-300 text-blue-600 hover:bg-blue-50"
+              className="w-full bg-[#FFDAB9] hover:bg-[#FFE4C4] text-black border-[#FFDAB9]"
               onClick={() => setExpanded(!expanded)}
             >
               <div className="flex items-center justify-center w-full">
