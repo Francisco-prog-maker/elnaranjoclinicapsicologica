@@ -65,10 +65,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       {/* Content overlay */}
       <div className="absolute inset-0 z-10">
         <div className="relative flex flex-col items-center justify-center h-full text-center px-4">
-          <div className="max-w-2xl space-y-8">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-stroke">
-              <span className="block">Bienvenid@s a Clínica</span>
-              <span className="block">Psicológica El Naranjo</span>
+          <div className="max-w-3xl space-y-8">
+            <h1 className="text-stroke flex flex-col gap-2">
+              <span className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold">
+                Bienvenid@s a Clínica
+              </span>
+              <span className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold">
+                Psicológica El Naranjo
+              </span>
             </h1>
             <p className="text-xl md:text-2xl lg:text-3xl text-white mb-10 drop-shadow-md">
               {tagline}
