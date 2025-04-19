@@ -38,14 +38,14 @@ const TherapistsSection = ({
       specialties: ["Duelo", "Autoestima", "Emociones", ],
       description:
         "Psicóloga Clínica especializada en el área Infanto-Juvenil y Adultos. Cuento con 5 años de experiencia en atención online, brindando apoyo terapéutico personalizado. Mi objetivo es acompañar a cada paciente en su proceso de crecimiento y bienestar emocional.",
-      workTopics: ["Autoestima", "Heridas de la Infancia", "Dependencia Emocional", "Autoconocimiento", "Duelo"],
+      workTopics: ["Pensamientos", "Heridas de la Infancia", "Dependencia Emocional", "Autoconocimiento", "Duelo"],
     },
     {
       id: "3",
       name: "Ps. Jissel Álvarez",
       image: "/Fotos/Jissel1.jpg",
       credentials: "Psicóloga Clínica",
-      specialties: ["Traumas", "Ansiedad", "Pérdidas", ],
+      specialties: ["Traumas", "Ansiedad", "Pérdidas", "Manejo de emociones", "Adaptación", ],
       description:
         "Psicóloga especialista en terapia sistémica breve, con enfoque en temáticas de género y violencia. Me dedico al desarrollo del autoconocimiento y bienestar emocional. Trabajo principalmente con adultos, ofreciendo un espacio seguro de escucha y reflexión donde pueden encontrar herramientas para su día a día.",
       workTopics: ["Ansiedad Social", "Traumas complejos", "Relaciones Familiares", "Conflictos de pareja", "Comunicación"],
@@ -55,7 +55,7 @@ const TherapistsSection = ({
       name: "Ps. Guido Palma",
       image: "/Fotos/Guido1.jpg",
       credentials: "Psicólogo Clínico",
-      specialties: ["Depresión", "Duelo", "Trauma", ],
+      specialties: ["Depresión", "Duelo", "Trauma", "Autoestima", ],
       description:
         "Psicólogo clínico comprometido con la salud mental. Mi enfoque se basa en reconocer la singularidad de cada persona para diseñar tratamientos personalizados. Me caracterizo por ser un profesional proactivo, accesible y empático, en constante actualización para brindar la mejor atención.",
       workTopics: ["Neurodivergencias", "Dificultades Relacionales", "Ansiedad", "Depresión", "Duelo"],
@@ -68,7 +68,7 @@ const TherapistsSection = ({
       specialties: ["Crisis", "Depresión", "TEA", ],
       description:
         "Psicóloga clínica especializada en adultos, con atención online. Me enfoco en el tratamiento de trastornos del ánimo, ansiedad, depresión y dificultades en el neurodesarrollo, incluyendo TEA. Brindo apoyo en procesos de duelo y crisis vitales desde una perspectiva psicoanalítica.",
-      workTopics: ["Crisis Vitales", "Duelo", "Dificultades del neurodesarrollo (TEA)", "Manejo Emocional", "Trastornos del Ánimo"],
+      workTopics: ["Crisis Vitales", "Duelo", "Ansiedad", "Manejo Emocional", "Trastornos del Ánimo"],
     },
   ],
 }: TherapistsSectionProps) => {
