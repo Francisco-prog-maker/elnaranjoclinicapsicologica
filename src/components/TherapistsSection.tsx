@@ -65,7 +65,7 @@ const TherapistsSection = ({
       name: "Ps. Catalina Hennigs",
       image: "/Fotos/Catalina1.jpg",
       credentials: "Psicóloga Clínica",
-      specialties: ["Cisis", "Depresión", "TEA", ],
+      specialties: ["Crisis", "Depresión", "TEA", ],
       description:
         "Psicóloga clínica especializada en adultos, con atención online. Me enfoco en el tratamiento de trastornos del ánimo, ansiedad, depresión y dificultades en el neurodesarrollo, incluyendo TEA. Brindo apoyo en procesos de duelo y crisis vitales desde una perspectiva psicoanalítica.",
       workTopics: ["Crisis Vitales", "Duelo", "Dificultades del neurodesarrollo (TEA)", "Manejo Emocional", "Trastornos del Ánimo"],
