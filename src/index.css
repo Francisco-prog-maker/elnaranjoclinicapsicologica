@@ -131,5 +131,11 @@
   .text-stroke {
     -webkit-text-stroke: 1px black;
     text-stroke: 1px black;
+    text-shadow: 
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+    color: white;
   }
 }
