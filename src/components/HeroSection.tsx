@@ -9,7 +9,7 @@ import {
 import { createGoogleCalendarUrl } from "@/lib/utils";
 
 interface HeroSectionProps {
-  title?: string;
+  title?: React.ReactNode;
   tagline?: string;
   ctaText?: string;
 }
