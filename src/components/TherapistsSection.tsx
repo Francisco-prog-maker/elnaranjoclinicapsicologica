@@ -25,7 +25,7 @@ const TherapistsSection = ({
       name: "Psi. Marie Elaine Mackenzie",
       image: "/Fotos/Marie3.png",
       credentials: "Psicóloga Clínica y Fundadora ",
-      specialties: ["Ansiedad", "Bipolaridad", "Duelos", "Emociones", "Estrés", ],
+      specialties: ["Fobia", "Bipolaridad", "Duelo", "Emociones", "Estrés", ],
       description:
         "Psicóloga y fundadora de la Clínica Psicológica El Naranjo. Me especializo en psicoterapia breve, con un enfoque humanista y experiencial. Trabajo principalmente con adolescentes y adultos, ofreciendo un acompañamiento cálido y profesional donde cada paciente se sienta escuchado y comprendido.",
       workTopics: ["Autoestima", "Autocuidado", "Depresión", "Espectro Autista", "Fobias"],
@@ -35,7 +35,7 @@ const TherapistsSection = ({
       name: "Ps. Ignacia Álvarez",
       image: "/Fotos/Ignacia1.jpg",
       credentials: "Psicóloga Clínica",
-      specialties: ["Duelos", "Pensamientos", "Emociones", ],
+      specialties: ["Duelo", "Autoestima", "Emociones", ],
       description:
         "Psicóloga Clínica especializada en el área Infanto-Juvenil y Adultos. Cuento con 5 años de experiencia en atención online, brindando apoyo terapéutico personalizado. Mi objetivo es acompañar a cada paciente en su proceso de crecimiento y bienestar emocional.",
       workTopics: ["Autoestima", "Heridas de la Infancia", "Dependencia Emocional", "Autoconocimiento", "Duelo"],
@@ -45,7 +45,7 @@ const TherapistsSection = ({
       name: "Ps. Jissel Álvarez",
       image: "/Fotos/Jissel1.jpg",
       credentials: "Psicóloga Clínica",
-      specialties: ["Ansiedad", "Depresión", "Pérdidas", ],
+      specialties: ["Traumas", "Ansiedad", "Pérdidas", ],
       description:
         "Psicóloga especialista en terapia sistémica breve, con enfoque en temáticas de género y violencia. Me dedico al desarrollo del autoconocimiento y bienestar emocional. Trabajo principalmente con adultos, ofreciendo un espacio seguro de escucha y reflexión donde pueden encontrar herramientas para su día a día.",
       workTopics: ["Ansiedad Social", "Traumas complejos", "Relaciones Familiares", "Conflictos de pareja", "Comunicación"],
@@ -55,7 +55,7 @@ const TherapistsSection = ({
       name: "Ps. Guido Palma",
       image: "/Fotos/Guido1.jpg",
       credentials: "Psicólogo Clínico",
-      specialties: ["Ansiedad", "Duelo", "Trauma", ],
+      specialties: ["Depresión", "Duelo", "Trauma", ],
       description:
         "Psicólogo clínico comprometido con la salud mental. Mi enfoque se basa en reconocer la singularidad de cada persona para diseñar tratamientos personalizados. Me caracterizo por ser un profesional proactivo, accesible y empático, en constante actualización para brindar la mejor atención.",
       workTopics: ["Neurodivergencias", "Dificultades Relacionales", "Ansiedad", "Depresión", "Duelo"],
@@ -65,7 +65,7 @@ const TherapistsSection = ({
       name: "Ps. Catalina Hennigs",
       image: "/Fotos/Catalina1.jpg",
       credentials: "Psicóloga Clínica",
-      specialties: ["Ansiedad", "Depresión", "TEA", ],
+      specialties: ["Cisis", "Depresión", "TEA", ],
       description:
         "Psicóloga clínica especializada en adultos, con atención online. Me enfoco en el tratamiento de trastornos del ánimo, ansiedad, depresión y dificultades en el neurodesarrollo, incluyendo TEA. Brindo apoyo en procesos de duelo y crisis vitales desde una perspectiva psicoanalítica.",
       workTopics: ["Crisis Vitales", "Duelo", "Dificultades del neurodesarrollo (TEA)", "Manejo Emocional", "Trastornos del Ánimo"],
