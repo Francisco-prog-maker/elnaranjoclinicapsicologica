@@ -11,7 +11,7 @@ interface TherapistsSectionProps {
     image: string;
     credentials: string;
     specialties: string[];
-    description: string;
+    description?: string;
     workTopics: string[];
   }>;
 }
@@ -27,7 +27,7 @@ const TherapistsSection = ({
       credentials: "Psicóloga Clínica y Fundadora ",
       specialties: ["Ansiedad", "Bipolaridad", "Duelos", "Emociones", "Estrés", ],
       description:
-        "Soy Marie Mackenzie, psicóloga y fundadora de la Clínica Psicológica El Naranjo. Me especializo en psicoterapia breve, con un enfoque humanista y experiencial, trabajando principalmente con adolescentes y adultos. Mi objetivo es ofrecer un acompañamiento cálido y profesional, donde cada paciente se sienta escuchado y comprendido.",
+        "Psicóloga y fundadora de la Clínica Psicológica El Naranjo. Me especializo en psicoterapia breve, con un enfoque humanista y experiencial. Trabajo principalmente con adolescentes y adultos, ofreciendo un acompañamiento cálido y profesional donde cada paciente se sienta escuchado y comprendido.",
       workTopics: ["Autoestima", "Autocuidado", "Depresión", "Espectro Autista", "Fobias"],
     },
     {
@@ -43,7 +43,7 @@ const TherapistsSection = ({
         "Mindfulness"
       ],
       description:
-        "Soy Ignacia Quezada Segovia, Psicóloga Clínica del área Infanto-Juvenil y Adultos. Atiendo desde hace 5 años en Modalidad Online. Mi objetivo es apoyar a los pacientes en su proceso terapéutico.",
+        "Psicóloga Clínica especializada en el área Infanto-Juvenil y Adultos. Cuento con 5 años de experiencia en atención online, brindando apoyo terapéutico personalizado. Mi objetivo es acompañar a cada paciente en su proceso de crecimiento y bienestar emocional.",
       workTopics: ["Relaciones Interpersonales", "Ansiedad", "Depresión", "Autoconocimiento", "Duelo"],
     },
     {
@@ -59,7 +59,7 @@ const TherapistsSection = ({
         "Mindfulness"
       ],
       description:
-        "Soy Jissel Alvarado, psicóloga, trabajo con la terapia sistémica breve, con enfoque en temáticas de género y violencia. También trabajo en autoconocimiento y bienestar emocional, acompañando a las personas en su proceso de crecimiento personal. Principalmente atiendo a adultos, brindando un espacio de escucha y reflexión, donde puedan sentirse comprendidos y encontrar estrategias y herramientas para afrontar su día a día. Mi objetivo es ofrecer un espacio seguro para sanar y crecer, promoviendo el bienestar emocional y el fortalecimiento personal.",
+        "Psicóloga especialista en terapia sistémica breve, con enfoque en temáticas de género y violencia. Me dedico al desarrollo del autoconocimiento y bienestar emocional. Trabajo principalmente con adultos, ofreciendo un espacio seguro de escucha y reflexión donde pueden encontrar herramientas para su día a día.",
       workTopics: ["Ansiedad Social", "Estrés Laboral", "Relaciones Familiares", "Autoestima", "Comunicación"],
     },
     {
@@ -75,7 +75,7 @@ const TherapistsSection = ({
         "Mindfulness"
       ],
       description:
-        "Soy Guido Palma, psicólogo apasionado por la salud mental. Mi labor se fundamenta en reconocer y valorar la singularidad de cada persona, lo que me permite diseñar tratamientos personalizados y adaptados a sus necesidades específicas. Me defino como un profesional proactivo, accesible, empático y comprometido con mi trabajo. Constantemente me esfuerzo por perfeccionar mis conocimientos teóricos y prácticos, con el objetivo de brindar la mejor atención posible.",
+        "Psicólogo clínico comprometido con la salud mental. Mi enfoque se basa en reconocer la singularidad de cada persona para diseñar tratamientos personalizados. Me caracterizo por ser un profesional proactivo, accesible y empático, en constante actualización para brindar la mejor atención.",
       workTopics: ["Manejo del Estrés", "Relaciones de Pareja", "Ansiedad", "Desarrollo Personal", "Bienestar"],
     },
     {
@@ -91,7 +91,7 @@ const TherapistsSection = ({
         "Mindfulness"
       ],
       description:
-        "Soy Catalina Hennigs, psicóloga clínica adultos. Atiendo en modalidad online. Acompaño a personas que atraviesan trastornos del ánimo, ansiedad, depresión y dificultades en el neurodesarrollo, incluyendo el Trastorno del Espectro Autista (TEA). También brindo apoyo en procesos de duelo y crisis vitales, ofreciendo un espacio de escucha y reflexión desde una perspectiva psicoanalítica.",
+        "Psicóloga clínica especializada en adultos, con atención online. Me enfoco en el tratamiento de trastornos del ánimo, ansiedad, depresión y dificultades en el neurodesarrollo, incluyendo TEA. Brindo apoyo en procesos de duelo y crisis vitales desde una perspectiva psicoanalítica.",
       workTopics: ["Desarrollo Personal", "Relaciones Familiares", "Autoestima", "Manejo Emocional", "Bienestar"],
     },
   ],
