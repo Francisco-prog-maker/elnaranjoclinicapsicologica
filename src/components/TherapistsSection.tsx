@@ -22,12 +22,12 @@ const TherapistsSection = ({
   therapists = [
     {
       id: "1",
-      name: "Dra. Marie Elaine Mackenzie",
+      name: "Psi. Marie Elaine Mackenzie",
       image: "/Fotos/Marie3.png",
-      credentials: "Doctorado en Psicología Clínica",
+      credentials: "Psicóloga Clínica y Fundadora ",
       specialties: ["Ansiedad", "Depresión", "Trauma", "Terapia de Parejas", "Mindfulness"],
       description:
-        "La Dra. Mackenzie se especializa en enfoques basados en evidencia para ayudar a los clientes a superar desafíos y mejorar su bienestar mental.",
+        "Soy Marie Mackenzie, psicóloga y fundadora de la Clínica Psicológica El Naranjo. Me especializo en psicoterapia breve, con un enfoque humanista y experiencial, trabajando principalmente con adolescentes y adultos. Mi objetivo es ofrecer un acompañamiento cálido y profesional, donde cada paciente se sienta escuchado y comprendido.",
       workTopics: ["Autoestima", "Relaciones", "Estrés", "Desarrollo Personal", "Bienestar Emocional"],
     },
     {
@@ -43,7 +43,7 @@ const TherapistsSection = ({
         "Mindfulness"
       ],
       description:
-        "La Ps. Ignacia se especializa en acompañar procesos de desarrollo personal y relacional, utilizando un enfoque integrador y centrado en la persona.",
+        "Soy Ignacia Quezada Segovia, Psicóloga Clínica del área Infanto-Juvenil y Adultos. Atiendo desde hace 5 años en Modalidad Online. Mi objetivo es apoyar a los pacientes en su proceso terapéutico.",
       workTopics: ["Relaciones Interpersonales", "Ansiedad", "Depresión", "Autoconocimiento", "Duelo"],
     },
     {
@@ -59,7 +59,7 @@ const TherapistsSection = ({
         "Mindfulness"
       ],
       description:
-        "La Ps. Jissel ayuda a sus pacientes a desarrollar estrategias efectivas para manejar la ansiedad y promover el crecimiento personal.",
+        "Soy Jissel Alvarado, psicóloga, trabajo con la terapia sistémica breve, con enfoque en temáticas de género y violencia. También trabajo en autoconocimiento y bienestar emocional, acompañando a las personas en su proceso de crecimiento personal. Principalmente atiendo a adultos, brindando un espacio de escucha y reflexión, donde puedan sentirse comprendidos y encontrar estrategias y herramientas para afrontar su día a día. Mi objetivo es ofrecer un espacio seguro para sanar y crecer, promoviendo el bienestar emocional y el fortalecimiento personal.",
       workTopics: ["Ansiedad Social", "Estrés Laboral", "Relaciones Familiares", "Autoestima", "Comunicación"],
     },
     {
@@ -75,7 +75,7 @@ const TherapistsSection = ({
         "Mindfulness"
       ],
       description:
-        "El Ps. Guido se enfoca en proporcionar herramientas efectivas para el manejo del estrés y el desarrollo de habilidades de afrontamiento.",
+        "Soy Guido Palma, psicólogo apasionado por la salud mental. Mi labor se fundamenta en reconocer y valorar la singularidad de cada persona, lo que me permite diseñar tratamientos personalizados y adaptados a sus necesidades específicas. Me defino como un profesional proactivo, accesible, empático y comprometido con mi trabajo. Constantemente me esfuerzo por perfeccionar mis conocimientos teóricos y prácticos, con el objetivo de brindar la mejor atención posible.",
       workTopics: ["Manejo del Estrés", "Relaciones de Pareja", "Ansiedad", "Desarrollo Personal", "Bienestar"],
     },
     {
@@ -91,7 +91,7 @@ const TherapistsSection = ({
         "Mindfulness"
       ],
       description:
-        "La Ps. Catalina acompaña a sus pacientes en su proceso terapéutico con un enfoque integral y personalizado.",
+        "Soy Catalina Hennigs, psicóloga clínica adultos. Atiendo en modalidad online. Acompaño a personas que atraviesan trastornos del ánimo, ansiedad, depresión y dificultades en el neurodesarrollo, incluyendo el Trastorno del Espectro Autista (TEA). También brindo apoyo en procesos de duelo y crisis vitales, ofreciendo un espacio de escucha y reflexión desde una perspectiva psicoanalítica.",
       workTopics: ["Desarrollo Personal", "Relaciones Familiares", "Autoestima", "Manejo Emocional", "Bienestar"],
     },
   ],
