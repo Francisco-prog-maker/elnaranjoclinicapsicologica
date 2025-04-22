@@ -35,7 +35,7 @@ const JisselModal: React.FC<JisselModalProps> = ({
             <div className="w-48 h-48 rounded-full overflow-hidden mb-4 border-4 border-peach-200">
               <img
                 src="/Fotos/Jissel1.jpg"
-                alt="Ps. Jissel Álvarez"
+                alt="Ps. Jissel Alvarado"
                 className="w-full h-full object-cover"
               />
             </div>

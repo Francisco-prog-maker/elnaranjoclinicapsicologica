@@ -35,7 +35,7 @@ const IgnaciaModal: React.FC<IgnaciaModalProps> = ({
             <div className="w-48 h-48 rounded-full overflow-hidden mb-4 border-4 border-peach-200">
               <img
                 src="/Fotos/Ignacia1.jpg"
-                alt="Ps. Ignacia Álvarez"
+                alt="Ps. Ignacia Quezada"
                 className="w-full h-full object-cover"
               />
             </div>

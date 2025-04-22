@@ -35,7 +35,7 @@ const MarieModal: React.FC<MarieModalProps> = ({
             <div className="w-48 h-48 rounded-full overflow-hidden mb-4 border-4 border-peach-200">
               <img
                 src="/Fotos/Marie3.png"
-                alt="Psi. Marie Elaine Mackenzie"
+                alt="Ps. Marie Elaine Mackenzie"
                 className="w-full h-full object-cover"
               />
             </div>
