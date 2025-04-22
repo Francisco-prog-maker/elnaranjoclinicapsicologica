@@ -7,7 +7,7 @@ import {
 } from "../ui/dialog";
 import { Button } from "../ui/button";
 import { Card } from "../ui/card";
-import { Check, MapPin, Video, Sofa } from "lucide-react";
+import { Check, MapPin, Video } from "lucide-react";
 import { createGoogleCalendarUrl } from "@/lib/utils";
 
 interface IgnaciaModalProps {
@@ -50,21 +50,25 @@ const IgnaciaModal: React.FC<IgnaciaModalProps> = ({
           {/* Columna derecha */}
           <div className="col-span-8">
             <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-              Ps. Ignacia Álvarez
+              Ps. Ignacia Quezada
             </h2>
             
-            <div className="flex items-center gap-6 mb-4">
+            <div className="flex flex-col space-y-3 mb-4">
               <div className="flex items-center gap-2">
                 <MapPin className="h-5 w-5 text-gray-600" />
-                <span className="text-gray-600">Santiago, Chile</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Sofa className="h-5 w-5 text-gray-600" />
-                <span className="text-gray-600">$30,000 Presencial</span>
+                <span className="text-gray-600">Chile</span>
               </div>
               <div className="flex items-center gap-2">
                 <Video className="h-5 w-5 text-gray-600" />
-                <span className="text-gray-600">$20,000 Online</span>
+                <span className="text-gray-600">Individual: 4 sesiones por $45.000</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Video className="h-5 w-5 text-gray-600" />
+                <span className="text-gray-600">Familiar: 4 sesiones por $70.000</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Video className="h-5 w-5 text-gray-600" />
+                <span className="text-gray-600">Parejas: 4 sesiones por $65.000</span>
               </div>
             </div>
 
