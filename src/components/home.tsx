@@ -55,7 +55,8 @@ const Home: React.FC = () => {
         phone="+56 123456789"
         email="clinicapsicologicaelnaranjo@gmail.com"
         socialLinks={{
-          instagram: "https://www.instagram.com/clinicapsicologicaelnaranjo/"
+          instagram: "https://www.instagram.com/clinicapsicologicaelnaranjo/",
+          tiktok: "@clinicaelnaranjo"
         }}
         calendlyUrl="https://calendly.com/clinicapsicologicaelnaranjo"
       />
