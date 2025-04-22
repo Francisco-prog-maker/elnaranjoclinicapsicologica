@@ -47,7 +47,7 @@ const TherapistsSection = ({
       credentials: "Psicóloga Clínica",
       specialties: ["Traumas", "Ansiedad", "Pérdidas", "Manejo de emociones", "Adaptación", ],
       description:
-        "Psicóloga especialista en terapia sistémica breve, con enfoque en temáticas de género y violencia. Me dedico al desarrollo del autoconocimiento y bienestar emocional. Trabajo principalmente con adultos, ofreciendo un espacio seguro de escucha y reflexión donde pueden encontrar herramientas para su día a día.",
+        "Psicóloga especialista en terapia sistémica breve, con enfoque en temáticas de género y violencia. Me dedico al...",
       workTopics: ["Ansiedad Social", "Traumas complejos", "Relaciones Familiares", "Conflictos de pareja", "Comunicación"],
     },
     {

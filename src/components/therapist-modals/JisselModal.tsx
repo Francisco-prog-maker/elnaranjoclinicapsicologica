@@ -51,7 +51,7 @@ const JisselModal: React.FC<JisselModalProps> = ({
           {/* Columna derecha */}
           <div className="col-span-8">
             <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-              Ps. Jissel Álvarez
+              Ps. Jissel Alvarado
             </h2>
             
             <div className="flex items-center gap-6 mb-4">
