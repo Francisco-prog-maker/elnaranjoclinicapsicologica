@@ -151,7 +151,7 @@ const Footer = ({
             </h3>
             <div className="space-y-3">
               <div className="flex items-center">
-                <Phone className="mr-2 h-5 w-5 text-teal-600 flex-shrink-0" />
+                <Phone className="mr-2 h-5 w-5 text-peach-800 flex-shrink-0" />
                 <a
                   href={`https://wa.me/${phone.replace(/\D/g, '')}`}
                   target="_blank"
@@ -162,7 +162,7 @@ const Footer = ({
                 </a>
               </div>
               <div className="flex items-center">
-                <Mail className="mr-2 h-5 w-5 text-teal-600 flex-shrink-0" />
+                <Mail className="mr-2 h-5 w-5 text-peach-800 flex-shrink-0" />
                 <a
                   href={`mailto:${email}`}
                   className="hover:text-teal-600 transition-colors"
