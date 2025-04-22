@@ -27,7 +27,7 @@ const TherapistsSection = ({
       credentials: "Psicóloga Clínica y Fundadora ",
       specialties: ["Fobia", "Bipolaridad", "Duelo", "Emociones", "Estrés", ],
       description:
-        "Psicóloga y fundadora de la Clínica Psicológica El Naranjo. Me especializo en psicoterapia breve, con un enfoque humanista y experiencial. Trabajo principalmente con adolescentes y adultos, ofreciendo un acompañamiento cálido y profesional donde cada paciente se sienta escuchado y comprendido.",
+        "Psicóloga y fundadora de la Clínica Psicológica El Naranjo. Me especializo en psicoterapia breve, con...",
       workTopics: ["Autoestima", "Autocuidado", "Depresión", "Espectro Autista", "Fobias"],
     },
     {
