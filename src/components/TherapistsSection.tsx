@@ -100,6 +100,7 @@ const TherapistsSection = ({
               viewport={{ once: true }}
             >
               <TherapistCard
+                id={therapist.id}
                 name={therapist.name}
                 image={therapist.image}
                 credentials={therapist.credentials}
@@ -124,6 +125,7 @@ const TherapistsSection = ({
               viewport={{ once: true }}
             >
               <TherapistCard
+                id={therapist.id}
                 name={therapist.name}
                 image={therapist.image}
                 credentials={therapist.credentials}

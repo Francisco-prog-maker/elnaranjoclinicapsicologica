@@ -9,9 +9,14 @@ import {
   CardTitle,
 } from "./ui/card";
 import { Badge } from "./ui/badge";
-import TherapistDetailModal from "./TherapistDetailModal";
+import MarieModal from "./therapist-modals/MarieModal";
+import IgnaciaModal from "./therapist-modals/IgnaciaModal";
+import JisselModal from "./therapist-modals/JisselModal";
+import GuidoModal from "./therapist-modals/GuidoModal";
+import CatalinaModal from "./therapist-modals/CatalinaModal";
 
 interface TherapistCardProps {
+  id: string;
   name: string;
   image: string;
   credentials: string;
@@ -22,6 +27,7 @@ interface TherapistCardProps {
 }
 
 const TherapistCard = ({
+  id,
   name = "Psi. Marie Mackenzie",
   image = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
   credentials = "Psicóloga Clínica",
@@ -31,6 +37,23 @@ const TherapistCard = ({
   onViewDetails,
 }: TherapistCardProps) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const renderModal = () => {
+    switch (id) {
+      case "1":
+        return <MarieModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />;
+      case "2":
+        return <IgnaciaModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />;
+      case "3":
+        return <JisselModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />;
+      case "4":
+        return <GuidoModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />;
+      case "5":
+        return <CatalinaModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />;
+      default:
+        return null;
+    }
+  };
 
   return (
     <>
@@ -79,17 +102,7 @@ const TherapistCard = ({
         </CardFooter>
       </Card>
 
-      <TherapistDetailModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        therapist={{
-          name,
-          image,
-          description,
-          specialties,
-          workTopics,
-        }}
-      />
+      {renderModal()}
     </>
   );
 };
