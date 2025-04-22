@@ -57,7 +57,7 @@ const TherapistsSection = ({
       credentials: "Psicólogo Clínico",
       specialties: ["Depresión", "Duelo", "Trauma", "Autoestima", ],
       description:
-        "Psicólogo clínico comprometido con la salud mental. Mi enfoque se basa en reconocer la singularidad de cada persona para diseñar tratamientos personalizados. Me caracterizo por ser un profesional proactivo, accesible y empático, en constante actualización para brindar la mejor atención.",
+        "Psicólogo clínico comprometido con la salud mental. Mi enfoque se basa en reconocer la singularidad de...",
       workTopics: ["Neurodivergencias", "Dificultades Relacionales", "Ansiedad", "Depresión", "Duelo"],
     },
     {
@@ -67,7 +67,7 @@ const TherapistsSection = ({
       credentials: "Psicóloga Clínica",
       specialties: ["Crisis", "Depresión", "TEA", ],
       description:
-        "Psicóloga clínica especializada en adultos, con atención online. Me enfoco en el tratamiento de trastornos del ánimo, ansiedad, depresión y dificultades en el neurodesarrollo, incluyendo TEA. Brindo apoyo en procesos de duelo y crisis vitales desde una perspectiva psicoanalítica.",
+        "Psicóloga clínica especializada en adultos, con atención online. Me enfoco en el tratamiento de...",
       workTopics: ["Crisis Vitales", "Duelo", "Ansiedad", "Manejo Emocional", "Trastornos del Ánimo"],
     },
   ],
