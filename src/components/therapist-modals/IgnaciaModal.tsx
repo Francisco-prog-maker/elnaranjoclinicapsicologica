@@ -60,15 +60,15 @@ const IgnaciaModal: React.FC<IgnaciaModalProps> = ({
               </div>
               <div className="flex items-center gap-2">
                 <Video className="h-5 w-5 text-gray-600" />
-                <span className="text-gray-600">Individual: 4 sesiones por $45.000</span>
+                <span className="text-gray-600">Individual: 4 sesiones por $45.000, online</span>
               </div>
               <div className="flex items-center gap-2">
                 <Video className="h-5 w-5 text-gray-600" />
-                <span className="text-gray-600">Familiar: 4 sesiones por $70.000</span>
+                <span className="text-gray-600">Familiar: 4 sesiones por $70.000, online</span>
               </div>
               <div className="flex items-center gap-2">
                 <Video className="h-5 w-5 text-gray-600" />
-                <span className="text-gray-600">Parejas: 4 sesiones por $65.000</span>
+                <span className="text-gray-600">Parejas: 4 sesiones por $65.000, online</span>
               </div>
             </div>
 

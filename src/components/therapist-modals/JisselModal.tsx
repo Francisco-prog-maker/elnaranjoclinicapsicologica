@@ -56,15 +56,15 @@ const JisselModal: React.FC<JisselModalProps> = ({
             <div className="flex items-center gap-6 mb-4">
               <div className="flex items-center gap-2">
                 <MapPin className="h-5 w-5 text-gray-600" />
-                <span className="text-gray-600">La Florida, Chile</span>
+                <span className="text-gray-600">Temuco, Chile</span>
               </div>
               <div className="flex items-center gap-2">
                 <Sofa className="h-5 w-5 text-gray-600" />
-                <span className="text-gray-600">$30,000 Presencial</span>
+                <span className="text-gray-600">$20,000 Presencial</span>
               </div>
               <div className="flex items-center gap-2">
                 <Video className="h-5 w-5 text-gray-600" />
-                <span className="text-gray-600">$20,000 Online</span>
+                <span className="text-gray-600">$15,000 Online</span>
               </div>
             </div>
 
