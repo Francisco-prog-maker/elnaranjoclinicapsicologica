@@ -37,7 +37,7 @@ const TherapistsSection = ({
       credentials: "Psicóloga Clínica",
       specialties: ["Duelo", "Autoestima", "Emociones", ],
       description:
-        "Psicóloga Clínica especializada en el área Infanto-Juvenil y Adultos. Cuento con 5 años de experiencia en atención online, brindando apoyo terapéutico personalizado. Mi objetivo es acompañar a cada paciente en su proceso de crecimiento y bienestar emocional.",
+        "Psicóloga Clínica especializada en el área Infanto-Juvenil y Adultos. Cuento con 5 años de experiencia en...",
       workTopics: ["Pensamientos", "Heridas de la Infancia", "Dependencia Emocional", "Autoconocimiento", "Duelo"],
     },
     {
