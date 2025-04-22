@@ -7,7 +7,7 @@ import {
 } from "../ui/dialog";
 import { Button } from "../ui/button";
 import { Card } from "../ui/card";
-import { Check, MapPin, Video, Sofa } from "lucide-react";
+import { Check, MapPin, Video, Phone } from "lucide-react";
 import { createGoogleCalendarUrl } from "@/lib/utils";
 
 interface CatalinaModalProps {
@@ -41,8 +41,9 @@ const CatalinaModal: React.FC<CatalinaModalProps> = ({
             </div>
             <Button
               onClick={handleAgendarCita}
-              className="w-full bg-[#FFDAB9] hover:bg-[#FFE4C4] text-black"
+              className="w-full bg-[#FFDAB9] hover:bg-[#FFE4C4] text-black flex items-center justify-center gap-2"
             >
+              <Phone className="h-4 w-4" />
               Agendar
             </Button>
           </div>
