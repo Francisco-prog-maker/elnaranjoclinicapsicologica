@@ -22,7 +22,7 @@ const TherapistsSection = ({
   therapists = [
     {
       id: "1",
-      name: "Psi. Marie Elaine Mackenzie",
+      name: "Ps. Marie Elaine Mackenzie",
       image: "/Fotos/Marie3.png",
       credentials: "Psicóloga Clínica y Fundadora ",
       specialties: ["Fobia", "Bipolaridad", "Duelo", "Emociones", "Estrés", ],
@@ -32,7 +32,7 @@ const TherapistsSection = ({
     },
     {
       id: "2",
-      name: "Ps. Ignacia Álvarez",
+      name: "Ps. Ignacia Quezada",
       image: "/Fotos/Ignacia1.jpg",
       credentials: "Psicóloga Clínica",
       specialties: ["Duelo", "Autoestima", "Emociones", ],
@@ -42,7 +42,7 @@ const TherapistsSection = ({
     },
     {
       id: "3",
-      name: "Ps. Jissel Álvarez",
+      name: "Ps. Jissel Alvarado",
       image: "/Fotos/Jissel1.jpg",
       credentials: "Psicóloga Clínica",
       specialties: ["Traumas", "Ansiedad", "Pérdidas", "Manejo de emociones", "Adaptación", ],

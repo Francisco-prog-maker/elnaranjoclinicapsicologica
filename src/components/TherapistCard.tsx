@@ -28,11 +28,11 @@ interface TherapistCardProps {
 
 const TherapistCard = ({
   id,
-  name = "Psi. Marie Mackenzie",
+  name = "Ps. Marie Mackenzie",
   image = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
   credentials = "Psicóloga Clínica",
   specialties = ["Ansiedad", "Depresión", "Trauma", "Terapia de Parejas"],
-  description = "La Psi. Mackenzie se especializa en enfoques basados en evidencia para ayudar a los clientes a superar desafíos y mejorar su bienestar mental.",
+  description = "La Ps. Mackenzie se especializa en enfoques basados en evidencia para ayudar a los clientes a superar desafíos y mejorar su bienestar mental.",
   workTopics = ["Autoestima", "Relaciones", "Estrés", "Ansiedad", "Depresión"],
   onViewDetails,
 }: TherapistCardProps) => {
