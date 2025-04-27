@@ -86,7 +86,7 @@ const MarieModal: React.FC<MarieModalProps> = ({
                     ))}
                   </ul>
                   <ul className="space-y-2">
-                    {["Estrés", "Emociones", "Espectro Autista", "Fobias", "Relaciones Interpersonales"].map((topic, index) => (
+                    {["Estrés", "Emociones", "Espectro Autista", "Relaciones Interpersonales"].map((topic, index) => (
                       <li key={index} className="flex items-center gap-2">
                         <Check className="h-4 w-4 text-teal-600" />
                         <span className="text-gray-700">{topic}</span>

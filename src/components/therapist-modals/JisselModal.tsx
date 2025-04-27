@@ -78,7 +78,7 @@ const JisselModal: React.FC<JisselModalProps> = ({
                 <h3 className="font-semibold text-gray-800 mb-3">Temáticas que trabajo</h3>
                 <div className="grid grid-cols-2 gap-4">
                   <ul className="space-y-2">
-                    {["Ansiedad Social", "Comunicación", "Conflictos de pareja", "Relaciones Familiares"].map((topic, index) => (
+                    {["Ansiedad", "Autoestima", "Conflictos de pareja", "Estrés", "Manejo de emociones"].map((topic, index) => (
                       <li key={index} className="flex items-center gap-2">
                         <Check className="h-4 w-4 text-teal-600" />
                         <span className="text-gray-700">{topic}</span>
@@ -86,7 +86,7 @@ const JisselModal: React.FC<JisselModalProps> = ({
                     ))}
                   </ul>
                   <ul className="space-y-2">
-                    {["Traumas complejos"].map((topic, index) => (
+                    {["Traumas complejos", "Duelo", "Depresión", "Pérdida", "Adaptación"].map((topic, index) => (
                       <li key={index} className="flex items-center gap-2">
                         <Check className="h-4 w-4 text-teal-600" />
                         <span className="text-gray-700">{topic}</span>

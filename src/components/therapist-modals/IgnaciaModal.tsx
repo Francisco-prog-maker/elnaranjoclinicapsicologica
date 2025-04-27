@@ -82,7 +82,7 @@ const IgnaciaModal: React.FC<IgnaciaModalProps> = ({
                 <h3 className="font-semibold text-gray-800 mb-3">Temáticas que trabajo</h3>
                 <div className="grid grid-cols-2 gap-4">
                   <ul className="space-y-2">
-                    {["Ansiedad", "Autocuidado", "Comunicación", "Depresión"].map((topic, index) => (
+                    {["Ansiedad", "Autoestima", "Depresión"].map((topic, index) => (
                       <li key={index} className="flex items-center gap-2">
                         <Check className="h-4 w-4 text-teal-600" />
                         <span className="text-gray-700">{topic}</span>
@@ -90,7 +90,7 @@ const IgnaciaModal: React.FC<IgnaciaModalProps> = ({
                     ))}
                   </ul>
                   <ul className="space-y-2">
-                    {["Relaciones Familiares", "Traumas complejos"].map((topic, index) => (
+                    {["Emociones", "Heridas de Infancia"].map((topic, index) => (
                       <li key={index} className="flex items-center gap-2">
                         <Check className="h-4 w-4 text-teal-600" />
                         <span className="text-gray-700">{topic}</span>

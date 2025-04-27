@@ -74,7 +74,7 @@ const GuidoModal: React.FC<GuidoModalProps> = ({
                 <h3 className="font-semibold text-gray-800 mb-3">Temáticas que trabajo</h3>
                 <div className="grid grid-cols-2 gap-4">
                   <ul className="space-y-2">
-                    {["Ansiedad", "Autoestima", "Depresión", "Estrés"].map((topic, index) => (
+                    {["Ansiedad", "Autoestima", "Depresión", "Duelo"].map((topic, index) => (
                       <li key={index} className="flex items-center gap-2">
                         <Check className="h-4 w-4 text-teal-600" />
                         <span className="text-gray-700">{topic}</span>
@@ -82,7 +82,7 @@ const GuidoModal: React.FC<GuidoModalProps> = ({
                     ))}
                   </ul>
                   <ul className="space-y-2">
-                    {["Relaciones Interpersonales", "Traumas complejos"].map((topic, index) => (
+                    {["Dificultades relacionales", "Fobias", "Trauma", "Neurodivergencias"].map((topic, index) => (
                       <li key={index} className="flex items-center gap-2">
                         <Check className="h-4 w-4 text-teal-600" />
                         <span className="text-gray-700">{topic}</span>
