@@ -78,7 +78,7 @@ const MarieModal: React.FC<MarieModalProps> = ({
                 <h3 className="font-semibold text-gray-800 mb-3">Temáticas que trabajo</h3>
                 <div className="grid grid-cols-2 gap-4">
                   <ul className="space-y-2">
-                    {["Ansiedad", "Autoestima", "Autocuidado", "Depresión"].map((topic, index) => (
+                    {["Ansiedad", "Autoestima", "Autocuidado", "Bipolaridad", "Depresión",].map((topic, index) => (
                       <li key={index} className="flex items-center gap-2">
                         <Check className="h-4 w-4 text-teal-600" />
                         <span className="text-gray-700">{topic}</span>
@@ -86,7 +86,7 @@ const MarieModal: React.FC<MarieModalProps> = ({
                     ))}
                   </ul>
                   <ul className="space-y-2">
-                    {["Espectro Autista", "Fobias", "Relaciones Interpersonales"].map((topic, index) => (
+                    {["Estrés", "Emociones", "Espectro Autista", "Fobias", "Relaciones Interpersonales"].map((topic, index) => (
                       <li key={index} className="flex items-center gap-2">
                         <Check className="h-4 w-4 text-teal-600" />
                         <span className="text-gray-700">{topic}</span>
