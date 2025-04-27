@@ -214,7 +214,7 @@ const ContactSection = () => {
                   <div>
                     <h4 className="font-medium text-slate-800">Ubicación</h4>
                     <p className="text-slate-600">
-                      CHile
+                      Chile
                     </p>
                   </div>
                 </div>
