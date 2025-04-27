@@ -52,13 +52,12 @@ const Home: React.FC = () => {
       {/* Footer */}
       <Footer
         clinicName="El Naranjo Clínica Psicológica"
-        phone="+56 123456789"
+        phone="+56981835706"
         email="clinicapsicologicaelnaranjo@gmail.com"
         socialLinks={{
           instagram: "https://www.instagram.com/clinicapsicologicaelnaranjo/",
           tiktok: "@clinicaelnaranjo"
         }}
-        calendlyUrl="https://calendly.com/clinicapsicologicaelnaranjo"
       />
 
       {/* Chatbot */}
