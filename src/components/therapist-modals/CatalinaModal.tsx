@@ -69,23 +69,20 @@ const CatalinaModal: React.FC<CatalinaModalProps> = ({
               Psicóloga clínica especializada en adultos, con atención online. Me enfoco en el tratamiento de trastornos del ánimo, ansiedad, depresión y dificultades en el neurodesarrollo, incluyendo TEA. Brindo apoyo en procesos de duelo y crisis vitales desde una perspectiva psicoanalítica.
             </p>
 
-            <div className="grid grid-cols-2 gap-4">
-              <Card className="p-4 bg-peach-50">
-                <h3 className="font-semibold text-gray-800 mb-3">Especialidad</h3>
-                <ul className="space-y-2">
-                  {["Crisis", "Depresión", "TEA"].map((specialty, index) => (
-                    <li key={index} className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-teal-600" />
-                      <span className="text-gray-700">{specialty}</span>
-                    </li>
-                  ))}
-                </ul>
-              </Card>
-
+            <div className="grid grid-cols-1 gap-4">
               <Card className="p-4 bg-peach-50">
                 <h3 className="font-semibold text-gray-800 mb-3">Temáticas que trabajo</h3>
                 <ul className="space-y-2">
-                  {["Crisis Vitales", "Duelo", "Ansiedad", "Manejo Emocional", "Trastornos del Ánimo"].map((topic, index) => (
+                  {[
+                    "Crisis", 
+                    "Depresión", 
+                    "TEA", 
+                    "Crisis Vitales", 
+                    "Duelo", 
+                    "Ansiedad", 
+                    "Manejo Emocional", 
+                    "Trastornos del Ánimo"
+                  ].map((topic, index) => (
                     <li key={index} className="flex items-center gap-2">
                       <Check className="h-4 w-4 text-teal-600" />
                       <span className="text-gray-700">{topic}</span>
