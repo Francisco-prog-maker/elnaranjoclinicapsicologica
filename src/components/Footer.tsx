@@ -20,6 +20,7 @@ interface FooterProps {
   email?: string;
   socialLinks?: {
     instagram?: string;
+    tiktok?: string;
   };
 }
 
