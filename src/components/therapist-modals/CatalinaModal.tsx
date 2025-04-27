@@ -72,23 +72,24 @@ const CatalinaModal: React.FC<CatalinaModalProps> = ({
             <div className="grid grid-cols-1 gap-4">
               <Card className="p-4 bg-peach-50">
                 <h3 className="font-semibold text-gray-800 mb-3">Temáticas que trabajo</h3>
-                <ul className="space-y-2">
-                  {[
-                    "Crisis", 
-                    "Depresión", 
-                    "TEA", 
-                    "Crisis Vitales", 
-                    "Duelo", 
-                    "Ansiedad", 
-                    "Manejo Emocional", 
-                    "Trastornos del Ánimo"
-                  ].map((topic, index) => (
-                    <li key={index} className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-teal-600" />
-                      <span className="text-gray-700">{topic}</span>
-                    </li>
-                  ))}
-                </ul>
+                <div className="grid grid-cols-2 gap-4">
+                  <ul className="space-y-2">
+                    {["Ansiedad", "Crisis", "Crisis Vitales", "Depresión"].map((topic, index) => (
+                      <li key={index} className="flex items-center gap-2">
+                        <Check className="h-4 w-4 text-teal-600" />
+                        <span className="text-gray-700">{topic}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <ul className="space-y-2">
+                    {["Duelo", "Manejo Emocional", "TEA", "Trastornos del Ánimo"].map((topic, index) => (
+                      <li key={index} className="flex items-center gap-2">
+                        <Check className="h-4 w-4 text-teal-600" />
+                        <span className="text-gray-700">{topic}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </Card>
             </div>
           </div>
