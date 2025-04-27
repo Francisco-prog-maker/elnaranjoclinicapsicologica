@@ -15,19 +15,17 @@ const TikTokIcon = () => (
 );
 
 interface FooterProps {
-  clinicName: string;
-  phone: string;
-  email: string;
-  socialLinks: {
-    instagram: string;
-    tiktok?: string;
+  clinicName?: string;
+  phone?: string;
+  email?: string;
+  socialLinks?: {
+    instagram?: string;
   };
-  calendlyUrl: string;
 }
 
 const Footer = ({
   clinicName = "El Naranjo Clínica Psicológica",
-  phone = " +56981835706",
+  phone = "+56981835706",
   email = "clinicapsicologicaelnaranjo@gmail.com",
   socialLinks = {
     instagram: "https://www.instagram.com/clinicapsicologicaelnaranjo/",
