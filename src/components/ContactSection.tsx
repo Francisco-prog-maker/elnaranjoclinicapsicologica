@@ -214,9 +214,7 @@ const ContactSection = () => {
                   <div>
                     <h4 className="font-medium text-slate-800">Ubicación</h4>
                     <p className="text-slate-600">
-                      Calle Sanación 123, Suite 101
-                      <br />
-                      Ciudad Bienestar, CB 12345
+                      CHile
                     </p>
                   </div>
                 </div>
@@ -224,8 +222,8 @@ const ContactSection = () => {
                 <div className="flex items-start">
                   <Phone className="h-6 w-6 text-teal-600 mr-4 mt-1" />
                   <div>
-                    <h4 className="font-medium text-slate-800">Teléfono</h4>
-                    <p className="text-slate-600">(555) 123-4567</p>
+                    <h4 className="font-medium text-slate-800">Móvil</h4>
+                    <p className="text-slate-600">(+56) 981835706</p>
                   </div>
                 </div>
 
@@ -236,7 +234,7 @@ const ContactSection = () => {
                       Correo Electrónico
                     </h4>
                     <p className="text-slate-600">
-                      contacto@clinicapsicologica.com
+                      clinicapsicologicaelnaranjo@gmail.com
                     </p>
                   </div>
                 </div>
@@ -246,9 +244,9 @@ const ContactSection = () => {
                   <div>
                     <h4 className="font-medium text-slate-800">Horario</h4>
                     <p className="text-slate-600">
-                      Lunes - Viernes: 9:00 AM - 7:00 PM
+                      Lunes - Viernes: 9:00 AM - 15:00 PM
                       <br />
-                      Sábado: 10:00 AM - 4:00 PM
+                      Sábado: 10:00 AM - 14:00 PM
                       <br />
                       Domingo: Cerrado
                     </p>
