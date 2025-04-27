@@ -27,7 +27,7 @@ interface FooterProps {
 
 const Footer = ({
   clinicName = "El Naranjo Clínica Psicológica",
-  phone = "(+56) 981835706",
+  phone = " +56981835706",
   email = "clinicapsicologicaelnaranjo@gmail.com",
   socialLinks = {
     instagram: "https://www.instagram.com/clinicapsicologicaelnaranjo/",
