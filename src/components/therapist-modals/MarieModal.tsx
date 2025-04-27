@@ -73,19 +73,7 @@ const MarieModal: React.FC<MarieModalProps> = ({
               Psicóloga y fundadora de la Clínica Psicológica El Naranjo. Me especializo en psicoterapia breve, con un enfoque humanista y experiencial. Trabajo principalmente con adolescentes y adultos, ofreciendo un acompañamiento cálido y profesional donde cada paciente se sienta escuchado y comprendido.
             </p>
 
-            <div className="grid grid-cols-2 gap-4">
-              <Card className="p-4 bg-peach-50">
-                <h3 className="font-semibold text-gray-800 mb-3">Especialidad</h3>
-                <ul className="space-y-2">
-                  {["Fobia", "Bipolaridad", "Duelo", "Emociones", "Estrés"].map((specialty, index) => (
-                    <li key={index} className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-teal-600" />
-                      <span className="text-gray-700">{specialty}</span>
-                    </li>
-                  ))}
-                </ul>
-              </Card>
-
+            <div className="grid grid-cols-1 gap-4">
               <Card className="p-4 bg-peach-50">
                 <h3 className="font-semibold text-gray-800 mb-3">Temáticas que trabajo</h3>
                 <div className="grid grid-cols-2 gap-4">

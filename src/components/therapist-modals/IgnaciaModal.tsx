@@ -77,24 +77,12 @@ const IgnaciaModal: React.FC<IgnaciaModalProps> = ({
               Psicóloga Clínica especializada en el área Infanto-Juvenil y Adultos. Cuento con 5 años de experiencia en atención online, brindando apoyo terapéutico personalizado. Mi objetivo es acompañar a cada paciente en su proceso de crecimiento y bienestar emocional.
             </p>
 
-            <div className="grid grid-cols-2 gap-4">
-              <Card className="p-4 bg-peach-50">
-                <h3 className="font-semibold text-gray-800 mb-3">Especialidad</h3>
-                <ul className="space-y-2">
-                  {["Duelo", "Autoestima", "Emociones"].map((specialty, index) => (
-                    <li key={index} className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-teal-600" />
-                      <span className="text-gray-700">{specialty}</span>
-                    </li>
-                  ))}
-                </ul>
-              </Card>
-
+            <div className="grid grid-cols-1 gap-4">
               <Card className="p-4 bg-peach-50">
                 <h3 className="font-semibold text-gray-800 mb-3">Temáticas que trabajo</h3>
                 <div className="grid grid-cols-2 gap-4">
                   <ul className="space-y-2">
-                    {["Autoconocimiento", "Autoestima", "Dependencia Emocional", "Duelo"].map((topic, index) => (
+                    {["Ansiedad", "Autocuidado", "Comunicación", "Depresión"].map((topic, index) => (
                       <li key={index} className="flex items-center gap-2">
                         <Check className="h-4 w-4 text-teal-600" />
                         <span className="text-gray-700">{topic}</span>
@@ -102,7 +90,7 @@ const IgnaciaModal: React.FC<IgnaciaModalProps> = ({
                     ))}
                   </ul>
                   <ul className="space-y-2">
-                    {["Heridas de la Infancia", "Pensamientos"].map((topic, index) => (
+                    {["Relaciones Familiares", "Traumas complejos"].map((topic, index) => (
                       <li key={index} className="flex items-center gap-2">
                         <Check className="h-4 w-4 text-teal-600" />
                         <span className="text-gray-700">{topic}</span>

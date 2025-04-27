@@ -69,24 +69,12 @@ const GuidoModal: React.FC<GuidoModalProps> = ({
               Psicólogo clínico comprometido con la salud mental. Mi enfoque se basa en reconocer la singularidad de cada persona para diseñar tratamientos personalizados. Me caracterizo por ser un profesional proactivo, accesible y empático, en constante actualización para brindar la mejor atención.
             </p>
 
-            <div className="grid grid-cols-2 gap-4">
-              <Card className="p-4 bg-peach-50">
-                <h3 className="font-semibold text-gray-800 mb-3">Especialidad</h3>
-                <ul className="space-y-2">
-                  {["Depresión", "Duelo", "Trauma", "Autoestima", "Fobias"].map((specialty, index) => (
-                    <li key={index} className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-teal-600" />
-                      <span className="text-gray-700">{specialty}</span>
-                    </li>
-                  ))}
-                </ul>
-              </Card>
-
+            <div className="grid grid-cols-1 gap-4">
               <Card className="p-4 bg-peach-50">
                 <h3 className="font-semibold text-gray-800 mb-3">Temáticas que trabajo</h3>
                 <div className="grid grid-cols-2 gap-4">
                   <ul className="space-y-2">
-                    {["Ansiedad", "Depresión", "Dificultades Relacionales", "Duelo"].map((topic, index) => (
+                    {["Ansiedad", "Autoestima", "Depresión", "Estrés"].map((topic, index) => (
                       <li key={index} className="flex items-center gap-2">
                         <Check className="h-4 w-4 text-teal-600" />
                         <span className="text-gray-700">{topic}</span>
@@ -94,7 +82,7 @@ const GuidoModal: React.FC<GuidoModalProps> = ({
                     ))}
                   </ul>
                   <ul className="space-y-2">
-                    {["Neurodivergencias"].map((topic, index) => (
+                    {["Relaciones Interpersonales", "Traumas complejos"].map((topic, index) => (
                       <li key={index} className="flex items-center gap-2">
                         <Check className="h-4 w-4 text-teal-600" />
                         <span className="text-gray-700">{topic}</span>
