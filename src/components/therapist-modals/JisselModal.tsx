@@ -8,7 +8,6 @@ import {
 import { Button } from "../ui/button";
 import { Card } from "../ui/card";
 import { Check, MapPin, Video, Sofa, Phone } from "lucide-react";
-import { createGoogleCalendarUrl } from "@/lib/utils";
 
 interface JisselModalProps {
   isOpen: boolean;
@@ -20,7 +19,7 @@ const JisselModal: React.FC<JisselModalProps> = ({
   onClose,
 }) => {
   const handleAgendarCita = () => {
-    window.open(createGoogleCalendarUrl(), "_blank");
+    window.open("https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1Xj0u8u_ff2QQMWE-oyTtpwO8Cj7wzORoUkmLQoffekthGAg7qtIPEir7w6sboFJYP7KYpv4Yd", "_blank");
   };
 
   return (
