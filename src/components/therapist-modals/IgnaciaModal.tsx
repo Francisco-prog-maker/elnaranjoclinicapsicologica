@@ -44,7 +44,7 @@ const IgnaciaModal: React.FC<IgnaciaModalProps> = ({
               className="w-full bg-[#FFDAB9] hover:bg-[#FFE4C4] text-black flex items-center justify-center gap-2"
             >
               <Phone className="h-4 w-4" />
-              Agendar
+              Agendar hora
             </Button>
           </div>
 

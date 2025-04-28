@@ -81,7 +81,7 @@ const Navbar = ({
               onClick={handleAgendarCita}
             >
               <Phone size={16} className="text-black" />
-              Agendar Cita
+              Agendar hora
             </Button>
           </div>
 
@@ -144,7 +144,7 @@ const Navbar = ({
               }}
             >
               <Phone size={16} className="text-black" />
-              Agendar Cita
+              Agendar hora
             </Button>
           </div>
         )}

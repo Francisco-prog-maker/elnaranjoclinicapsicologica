@@ -17,7 +17,7 @@ interface HeroSectionProps {
 const HeroSection: React.FC<HeroSectionProps> = ({
   title = "El Naranjo Clinica Psicológica",
   tagline = "Apoyando tu camino hacia el bienestar mental con compasión y experiencia",
-  ctaText = "Agendar una Cita",
+  ctaText = "Agendar una hora",
 }) => {
   const [api, setApi] = React.useState<CarouselApi>();
 
@@ -47,7 +47,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         className="w-full h-full"
       >
         <CarouselContent>
-          {["/Fotos/1-scaled.jpg", "/Fotos/patient1.jpg", "/Fotos/patient2.jpg"].map((src, index) => (
+          {["/Fotos/1-scaled.jpg", "/Fotos/3-scaled.jpg", "/Fotos/2.jpg", "/Fotos/4.jpg"].map((src, index) => (
             <CarouselItem key={index} className="w-full h-[700px]">
               <div className="relative w-full h-full">
                 <img

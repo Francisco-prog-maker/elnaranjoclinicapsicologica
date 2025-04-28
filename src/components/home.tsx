@@ -38,12 +38,10 @@ const Home: React.FC = () => {
         {/* Las demás secciones usarán scroll-margin-top */}
         <ServicesSection
           title="Nuestros Servicios"
-          subtitle="Ofrecemos una variedad de enfoques terapéuticos adaptados a tus necesidades únicas"
         />
 
         <TherapistsSection
-          title="Nuestros Terapeutas Expertos"
-          description="Conoce a nuestro equipo de profesionales licenciados dedicados a proporcionar atención de salud mental compasiva y efectiva."
+          title="Nuestros Terapeutas"
         />
 
         <ContactSection />
@@ -51,7 +49,7 @@ const Home: React.FC = () => {
 
       {/* Footer */}
       <Footer
-        clinicName="El Naranjo Clínica Psicológica"
+        clinicName="Clínica Psicológica El Naranjo"
         phone="+56981835706"
         email="clinicapsicologicaelnaranjo@gmail.com"
         socialLinks={{

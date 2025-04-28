@@ -118,7 +118,7 @@ const ContactSection = () => {
           {/* Contact Form */}
           <div className="bg-white p-8 rounded-lg shadow-md">
             <h3 className="text-2xl font-semibold text-slate-800 mb-6">
-              Solicitar una Cita
+              Solicitar una hora
             </h3>
             <Form {...form}>
               <form
@@ -244,11 +244,10 @@ const ContactSection = () => {
                   <div>
                     <h4 className="font-medium text-slate-800">Horario</h4>
                     <p className="text-slate-600">
-                      Lunes - Viernes: 9:00 AM - 15:00 PM
+                      Lunes a Viernes: 10:00 AM - 20:00 PM
                       <br />
-                      Sábado: 10:00 AM - 14:00 PM
+                      Sábados: 10:00 AM - 16:00 PM
                       <br />
-                      Domingo: Cerrado
                     </p>
                   </div>
                 </div>
