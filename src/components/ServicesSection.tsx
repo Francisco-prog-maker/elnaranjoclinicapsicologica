@@ -14,7 +14,7 @@ interface ServicesSectionProps {
 
 const ServicesSection = ({
   title = "Nuestros Servicios",
-  subtitle = "En qué podemos ayudarte?",
+  subtitle = "",
 }: ServicesSectionProps) => {
   const containerVariants = {
     hidden: { opacity: 0 },

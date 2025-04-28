@@ -8,7 +8,6 @@ import {
 import { Button } from "../ui/button";
 import { Card } from "../ui/card";
 import { Check, MapPin, Video, Phone } from "lucide-react";
-import { createGoogleCalendarUrl } from "@/lib/utils";
 
 interface CatalinaModalProps {
   isOpen: boolean;
@@ -20,7 +19,7 @@ const CatalinaModal: React.FC<CatalinaModalProps> = ({
   onClose,
 }) => {
   const handleAgendarCita = () => {
-    window.open(createGoogleCalendarUrl(), "_blank");
+    window.open("https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0buGr6ORjpJQqSZupXD41qiemCqWiHHtRaRqnCL0u9pfAKSTJUTnRWssX9K_4YhfFBzlfT9Y6W", "_blank");
   };
 
   return (

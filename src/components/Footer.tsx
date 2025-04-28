@@ -174,7 +174,7 @@ const Footer = ({
                   onClick={handleAgendarCita}
                   className="bg-[#FFDAB9] hover:bg-[#FFE4C4] text-black border-[#FFDAB9]"
                 >
-                  Agendar Cita
+                  Agendar hora
                 </Button>
               </div>
             </div>

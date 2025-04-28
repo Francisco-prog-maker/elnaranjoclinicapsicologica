@@ -17,8 +17,8 @@ interface TherapistsSectionProps {
 }
 
 const TherapistsSection = ({
-  title = "Nuestros Terapeutas Expertos",
-  description = "Conoce a nuestro equipo de profesionales licenciados dedicados a proporcionar atención de salud mental compasiva y efectiva.",
+  title = "Nuestros Terapeutas",
+  description = "",
   therapists = [
     {
       id: "1",
