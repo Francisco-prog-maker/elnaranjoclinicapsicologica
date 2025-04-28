@@ -8,6 +8,7 @@ import {
 import { Button } from "../ui/button";
 import { Card } from "../ui/card";
 import { Check, MapPin, Video, Sofa, Phone } from "lucide-react";
+import { createGoogleCalendarUrl } from "@/lib/utils";
 
 interface MarieModalProps {
   isOpen: boolean;

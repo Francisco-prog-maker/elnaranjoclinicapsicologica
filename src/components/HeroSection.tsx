@@ -32,7 +32,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   }, [api]);
 
   const handleAgendarCita = () => {
-    window.open(createGoogleCalendarUrl(), "_blank");
+    window.open("https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0kVGpqbl5P8wkvLD3Bf0i5P1ySMrP028Vp0A_Sim58qH0UfcX5oIZ54sy95yK-Z-QJX4tSS_bj", "_blank");
   };
 
   return (
