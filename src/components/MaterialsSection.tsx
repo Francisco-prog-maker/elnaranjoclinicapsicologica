@@ -43,7 +43,7 @@ const MaterialsSection = ({
               />
               <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
                 <h3 className="text-2xl font-semibold text-white text-center px-4">
-                  Mi Zona de calma
+                  Mi zona de calma
                 </h3>
               </div>
             </Card>
