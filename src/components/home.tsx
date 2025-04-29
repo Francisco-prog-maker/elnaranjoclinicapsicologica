@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import HeroSection from "./HeroSection";
 import ServicesSection from "./ServicesSection";
 import TherapistsSection from "./TherapistsSection";
+import MaterialsSection from "./MaterialsSection";
 import ContactSection from "./ContactSection";
 import Footer from "./Footer";
 import Chatbot from "./Chatbot";
@@ -42,6 +43,10 @@ const Home: React.FC = () => {
 
         <TherapistsSection
           title="Nuestros Terapeutas"
+        />
+
+        <MaterialsSection
+          title="Guías"
         />
 
         <ContactSection />
