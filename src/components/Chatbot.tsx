@@ -112,9 +112,13 @@ const Chatbot: React.FC<ChatbotProps> = ({ name = "Ps. Yin" }) => {
         "¡Por supuesto! Te ayudo a agendar una hora. ¿Con cuál de nuestros profesionales te gustaría agendar? Tenemos disponibles a:\n- Ps. Marie\n- Ps. Ignacia\n- Ps. Catalina\n- Ps. Guido\n- Ps. Jissel",
     },
     {
-      keywords: ["cuántas", "cuantas", "sesiones", "necesito"],
+      keywords: ["cuántas", "cuantas", "sesiones", "necesito", "duración terapia", "duracion terapia", "tiempo terapia"],
       response:
         "La duración de la terapia varía según los objetivos que tengas. Algunos encuentran beneficios con pocas sesiones, mientras que otros prefieren trabajar a largo plazo para profundizar en ciertos temas. Tu terapeuta te orientará sobre la mejor estrategia para ti.",
+    },
+    {
+      keywords: ["informacion de los psicologos", "valores", "valores de la sesion", "valores de las sesiones", "precio", "precios", "precio de la sesion", "precios de las sesiones", "costo", "costos", "valor", "cuanto cuesta", "cuanto vale", "información de los psicólogos", "información psicólogos", "información de terapeutas", "terapeutas disponibles", "especialidades", "especialidad", "valores sesiones", "precio sesion", "precio sesiones", "costo sesion", "costo sesiones", "valor sesion", "valor sesiones"],
+      response: "Te invito a visitar nuestra sección de Terapeutas en la página principal donde encontrarás información detallada sobre cada profesional, sus especialidades y los valores de las sesiones. Te redirigiré allí ahora.",
     },
     {
       keywords: ["normal", "nervios", "comenzar", "miedo"],
