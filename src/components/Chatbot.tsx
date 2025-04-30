@@ -27,7 +27,7 @@ const Chatbot: React.FC<ChatbotProps> = ({ name = "Ps. Yin" }) => {
   // Predefined Q&A pairs related to clinical psychology
   const qaPairs = [
     {
-      keywords: ["agendar", "agenda", "quiero agendar", "deseo agendar", "cita", "reservar", "reserva", "hora", "agendar hora", "agendar una hora", ],
+      keywords: ["agendar", "agenda", "quiero agendar", "deseo agendar", "cita", "reservar", "reserva", "hora", "agendar hora", "agendar una hora", "hijo", "hija", "niño", "niña", "busco", "buscando", "necesito", "psicólogo", "psicologa", "psicóloga", "psicologo", "psicólogos", "psicologos"],
       response: "¡Por supuesto! Te ayudo a agendar una hora. ¿Con cuál de nuestros profesionales te gustaría agendar? Tenemos disponibles a:\n- Ps. Marie\n- Ps. Ignacia\n- Ps. Catalina\n- Ps. Guido\n- Ps. Jissel",
     },
     {
