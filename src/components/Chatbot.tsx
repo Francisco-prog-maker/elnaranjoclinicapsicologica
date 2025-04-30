@@ -64,7 +64,7 @@ const Chatbot: React.FC<ChatbotProps> = ({ name = "Ps. Yin" }) => {
 
   const qaPairs = [
     {
-      keywords: ["whatsapp", "whats app", "wsp", "wassap", "whasap", "contactar", "contacto", "mensaje", "mensajear", "número", "numero", "chat"],
+      keywords: ["whatsapp", "whats app", "wsp", "wassap", "y el whastapp?", "y el whatsapp?", "whasap", "contactar", "contacto", "mensaje", "mensajear", "número", "numero", "chat"],
       response: "Por supuesto, te comparto nuestro WhatsApp para que puedas contactarnos directamente. Te redirigiré al chat.",
     },
     {
@@ -175,7 +175,11 @@ const Chatbot: React.FC<ChatbotProps> = ({ name = "Ps. Yin" }) => {
       keywords: ["trauma", "traumático", "traumatico"],
       response:
         "El trauma puede tener un impacto significativo en nuestra vida. Existen enfoques terapéuticos específicos para el trauma que pueden ayudarte a procesar las experiencias difíciles y desarrollar resiliencia. Es importante trabajar a tu propio ritmo y en un espacio seguro.",
-    }
+    },
+    {
+      keywords: ["informacion de los psicologos", "valores", "valores de la sesion", "valores de las sesiones", "precio", "precios", "precio de la sesion", "precios de las sesiones", "costo", "costos", "valor", "cuanto cuesta", "cuanto vale", "información de los psicólogos", "información psicólogos", "información de terapeutas", "terapeutas disponibles", "especialidades", "especialidad"],
+      response: "Te invito a visitar nuestra sección de Terapeutas en la página principal donde encontrarás información detallada sobre cada profesional, sus especialidades y los valores de las sesiones. Te redirigiré allí ahora.",
+    },
   ];
 
   const handleWhatsAppRequest = (input: string) => {
@@ -205,6 +209,22 @@ const Chatbot: React.FC<ChatbotProps> = ({ name = "Ps. Yin" }) => {
     };
     setMessages((prev) => [...prev, userMessage]);
     
+    // Check for therapist info request
+    const therapistInfoKeywords = ["informacion de los psicologos", "valores", "precios", "precio", "costo", "costos", "valor"];
+    if (therapistInfoKeywords.some(keyword => input.toLowerCase().includes(keyword))) {
+      const response = generateResponse(input);
+      setMessages(prev => [...prev, { text: response, sender: "bot" }]);
+      setTimeout(() => {
+        // Redirect to therapists section
+        const therapistsSection = document.getElementById('therapists');
+        if (therapistsSection) {
+          therapistsSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 1500);
+      setInput("");
+      return;
+    }
+
     if (handleWhatsAppRequest(input)) {
       setInput("");
       return;
