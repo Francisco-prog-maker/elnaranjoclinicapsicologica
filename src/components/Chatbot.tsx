@@ -41,7 +41,7 @@ const Chatbot: React.FC<ChatbotProps> = ({ name = "Ps. Yin" }) => {
         "La depresión es un trastorno del estado de ánimo que puede manifestarse como tristeza persistente, pérdida de interés y energía. Es importante buscar ayuda profesional si experimentas estos síntomas por más de dos semanas.",
     },
     {
-      keywords: ["terapia", "psicólogo", "psicologa", "tratamiento"],
+      keywords: ["terapia", "psicólogo", "psicologa", "tratamiento", "buscando psicólogo", "buscando psicóloga"],
       response:
         "¡Por supuesto! Te ayudo a agendar una hora. ¿Con cuál de nuestros profesionales te gustaría agendar? Tenemos disponibles a:\n- Ps. Marie\n- Ps. Ignacia\n- Ps. Catalina\n- Ps. Guido\n- Ps. Jissel",
     },
