@@ -177,7 +177,7 @@ const Chatbot: React.FC<ChatbotProps> = ({ name = "Ps. Yin" }) => {
         "El trauma puede tener un impacto significativo en nuestra vida. Existen enfoques terapéuticos específicos para el trauma que pueden ayudarte a procesar las experiencias difíciles y desarrollar resiliencia. Es importante trabajar a tu propio ritmo y en un espacio seguro.",
     },
     {
-      keywords: ["informacion de los psicologos", "valores", "valores de la sesion", "valores de las sesiones", "precio", "precios", "precio de la sesion", "precios de las sesiones", "costo", "costos", "valor", "cuanto cuesta", "cuanto vale", "información de los psicólogos", "información psicólogos", "información de terapeutas", "terapeutas disponibles", "especialidades", "especialidad"],
+      keywords: ["informacion de los psicologos", "como se llaman los psicologos", "como se llaman las psicologas", "valores", "valores de la sesion", "valores de las sesiones", "precio", "precios", "precio de la sesion", "precios de las sesiones", "los precios de las sesiones", "costo", "costos", "valor", "cuanto cuesta", "cuanto vale", "información de los psicólogos", "información psicólogos", "información de terapeutas", "terapeutas disponibles", "especialidades", "especialidad"],
       response: "Te invito a visitar nuestra sección de Terapeutas en la página principal donde encontrarás información detallada sobre cada profesional, sus especialidades y los valores de las sesiones. Te redirigiré allí ahora.",
     },
   ];
