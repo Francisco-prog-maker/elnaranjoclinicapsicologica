@@ -35,7 +35,7 @@ const CatalinaModal: React.FC<CatalinaModalProps> = ({
               <img
                 src="/Fotos/Catalina1.jpg"
                 alt="Ps. Catalina Hennigs"
-                className="w-full h-full object-cover"
+                className="wHennigsull object-cover"
               />
             </div>
             <Button
