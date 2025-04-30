@@ -24,11 +24,52 @@ const Chatbot: React.FC<ChatbotProps> = ({ name = "Ps. Yin" }) => {
   const [initialGreetingDone, setInitialGreetingDone] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
-  // Predefined Q&A pairs related to clinical psychology
+  const handleTherapistScheduling = (input: string) => {
+    const therapistUrls = {
+      marie: "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0kVGpqbl5P8wkvLD3Bf0i5P1ySMrP028Vp0A_Sim58qH0UfcX5oIZ54sy95yK-Z-QJX4tSS_bj",
+      ignacia: "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1Wd1dfg2xV3N7m5eKUx8grOZ0-fNY9NK-ayYDuZeCu1GfWQ7mLic-fN4oo3J9iNRA1k_TBl7HA",
+      guido: "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0yMz-lI8LM3qheGCCCnCyoDIYdATjmsU5ncA8L6KnOsSiWGy3OEKVXmofhAdFaL7b8jj9nM8hd",
+      catalina: "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0buGr6ORjpJQqSZupXD41qiemCqWiHHtRaRqnCL0u9pfAKSTJUTnRWssX9K_4YhfFBzlfT9Y6W",
+      jissel: "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1Xj0u8u_ff2QQMWE-oyTtpwO8Cj7wzORoUkmLQoffekthGAg7qtIPEir7w6sboFJYP7KYpv4Yd"
+    };
+
+    const input_lower = input.toLowerCase();
+    let selectedTherapist = null;
+
+    if (input_lower.includes("marie") || input_lower.includes("mackenzie")) {
+      selectedTherapist = "marie";
+    } else if (input_lower.includes("ignacia") || input_lower.includes("quezada")) {
+      selectedTherapist = "ignacia";
+    } else if (input_lower.includes("guido") || input_lower.includes("palma")) {
+      selectedTherapist = "guido";
+    } else if (input_lower.includes("catalina") || input_lower.includes("hennigs")) {
+      selectedTherapist = "catalina";
+    } else if (input_lower.includes("jissel") || input_lower.includes("alvarado")) {
+      selectedTherapist = "jissel";
+    }
+
+    if (selectedTherapist) {
+      const goodbyeMessage: Message = {
+        text: `¡Perfecto! Te dirigiré al calendario de ${selectedTherapist.charAt(0).toUpperCase() + selectedTherapist.slice(1)}. Gracias por confiar en nosotros.`,
+        sender: "bot" as const
+      };
+      setMessages(prev => [...prev, goodbyeMessage]);
+      setTimeout(() => {
+        window.open(therapistUrls[selectedTherapist!], "_blank");
+      }, 1500);
+      return true;
+    }
+    return false;
+  };
+
   const qaPairs = [
     {
-      keywords: ["agendar", "agenda", "quiero agendar", "deseo agendar", "cita", "reservar", "reserva", "hora", "agendar hora", "agendar una hora", "hijo", "hija", "niño", "niña", "busco", "buscando", "necesito", "psicólogo", "psicologa", "psicóloga", "psicologo", "psicólogos", "psicologos"],
-      response: "¡Por supuesto! Te ayudo a agendar una hora. ¿Con cuál de nuestros profesionales te gustaría agendar? Tenemos disponibles a:\n- Ps. Marie\n- Ps. Ignacia\n- Ps. Catalina\n- Ps. Guido\n- Ps. Jissel",
+      keywords: ["whatsapp", "whats app", "wsp", "wassap", "whasap", "contactar", "contacto", "mensaje", "mensajear", "número", "numero", "chat"],
+      response: "Por supuesto, te comparto nuestro WhatsApp para que puedas contactarnos directamente. Te redirigiré al chat.",
+    },
+    {
+      keywords: ["agendar", "agenda", "quiero agendar", "deseo agendar", "cita", "reservar", "reserva", "hora", "agendar hora", "agendar una hora", "hijo", "hija", "niño", "niña", "busco", "buscando", "necesito", "psicólogo", "psicologa", "psicóloga", "psicologo", "psicólogos", "psicologos", "terapia", "consulta", "atención", "atencion", "tratamiento"],
+      response: "¡Por supuesto! Te ayudo a agendar una hora. ¿Con cuál de nuestros profesionales te gustaría agendar?\n- Ps. Marie Mackenzie\n- Ps. Ignacia Quezada\n- Ps. Catalina Hennigs\n- Ps. Guido Palma\n- Ps. Jissel Alvarado",
     },
     {
       keywords: ["ansiedad", "nervios", "preocupación", "preocupacion"],
@@ -137,118 +178,51 @@ const Chatbot: React.FC<ChatbotProps> = ({ name = "Ps. Yin" }) => {
     }
   ];
 
-  const checkPositiveResponse = (input: string): boolean => {
-    const positiveWords = ["si", "sí", "ok", "esta bien", "bien", "claro", "por supuesto", "dale", "bueno"];
-    const lowerInput = input.toLowerCase();
-    return positiveWords.some(word => lowerInput.includes(word));
-  };
-
-  const checkNegativeResponse = (input: string): boolean => {
-    const negativeWords = ["no", "nop", "nel", "después", "despues", "otro día", "otro dia", "más tarde", "mas tarde", "ahora no"];
-    const lowerInput = input.toLowerCase();
-    return negativeWords.some(word => lowerInput.includes(word));
-  };
-
-  const askAboutAppointment = () => {
-    const message: Message = {
-      text: "¿Te gustaría agendar una cita con alguno de nuestros psicólogos? Tenemos disponibles a la Ps. Marie, Ps. Ignacia, Ps. Catalina, Ps. Guido y Ps. Jissel.",
-      sender: "bot" as const
-    };
-    setMessages(prev => [...prev, message]);
-    setWaitingForAppointmentResponse(true);
-    setAskedAboutAppointment(true);
-  };
-
-  const handleAppointmentResponse = (input: string) => {
-    if (checkPositiveResponse(input)) {
-      const goodbyeMessage: Message = {
-        text: "¡Me alegro mucho! Gracias por confiar en nosotros. Te dirigiré al calendario para que puedas agendar tu cita con el profesional de tu preferencia.",
-        sender: "bot" as const
-      };
-      setMessages(prev => [...prev, goodbyeMessage]);
-      setTimeout(() => {
-        window.open(createGoogleCalendarUrl(), "_blank");
-      }, 1500);
-    } else if (checkNegativeResponse(input)) {
-      setQuestionCount(count => count + 1);
-      const responseMessage: Message = {
-        text: "Entiendo perfectamente. Continuemos conversando y cuando te sientas preparado/a, puedes agendar una cita en el momento que lo consideres adecuado.",
-        sender: "bot" as const
-      };
-      setMessages(prev => [...prev, responseMessage]);
-    }
-    setWaitingForAppointmentResponse(false);
-  };
-
-  const checkForFinalGoodbye = () => {
-    const goodbyeMessage: Message = {
-      text: "Gracias por compartir conmigo. Te animo a que consideres agendar una cita cuando te sientas preparado/a. Nuestros profesionales estarán encantados de ayudarte en tu proceso. ¡Que tengas un excelente día!",
-      sender: "bot" as const
-    };
-    setMessages(prev => [...prev, goodbyeMessage]);
-    setTimeout(() => {
-      setIsOpen(false);
-    }, 5000);
-  };
-
-  const checkForSchedulingRequest = (input: string): boolean => {
-    const schedulingKeywords = [
-      "agendar", "agenda", "cita", "reservar", "reserva",
-      "quiero agendar", "deseo agendar", "quisiera agendar",
-      "quiero una cita", "deseo una cita", "necesito una cita", "hora", "agendar hora", "agendar una hora"
-    ];
-    
-    const therapistNames = [
-      "marie", "ignacia", "catalina", "guido", "jissel",
-      "ps marie", "ps ignacia", "ps catalina", "ps guido", "ps jissel",
-      "ps. marie", "ps. ignacia", "ps. catalina", "ps. guido", "ps. jissel"
-    ];
-
+  const handleWhatsAppRequest = (input: string) => {
+    const whatsappKeywords = ["whatsapp", "whats app", "wsp", "wassap", "whasap", "contactar", "contacto", "mensaje", "mensajear"];
     const input_lower = input.toLowerCase();
     
-    // Check if the input contains scheduling keywords
-    const hasSchedulingKeyword = schedulingKeywords.some(keyword => 
-      input_lower.includes(keyword.toLowerCase())
-    );
-    
-    // Check if the input contains a therapist name
-    const hasTherapistName = therapistNames.some(name => 
-      input_lower.includes(name.toLowerCase())
-    );
-
-    return hasSchedulingKeyword || hasTherapistName;
+    if (whatsappKeywords.some(keyword => input_lower.includes(keyword))) {
+      const message: Message = {
+        text: "Por supuesto, te redirigiré a nuestro WhatsApp para que puedas contactarnos directamente.",
+        sender: "bot" as const
+      };
+      setMessages(prev => [...prev, message]);
+      setTimeout(() => {
+        window.open("http://wa.me/56981835706", "_blank");
+      }, 1500);
+      return true;
+    }
+    return false;
   };
 
-  const handleDirectScheduling = (input: string) => {
-    const goodbyeMessage: Message = {
-      text: "¡Perfecto! Te dirigiré al calendario para que puedas agendar tu cita. Gracias por confiar en nosotros.",
-      sender: "bot" as const
-    };
-    setMessages(prev => [...prev, goodbyeMessage]);
-    setTimeout(() => {
-      window.open(createGoogleCalendarUrl(), "_blank");
-    }, 1500);
-  };
-
-  // Function to handle sending a message
   const handleSend = () => {
     if (input.trim() === "") return;
 
-    // Add user message
     const userMessage: Message = { 
       text: input, 
       sender: "user" as const 
     };
     setMessages((prev) => [...prev, userMessage]);
     
-    if (checkForSchedulingRequest(input)) {
-      handleDirectScheduling(input);
+    if (handleWhatsAppRequest(input)) {
       setInput("");
       return;
     }
-    
+
+    if (handleTherapistScheduling(input)) {
+      setInput("");
+      return;
+    }
+
+    if (checkForSchedulingRequest(input)) {
+      const response = generateResponse(input);
+      setMessages(prev => [...prev, { text: response, sender: "bot" }]);
+      setInput("");
+      return;
+    }
+
     if (!initialGreetingDone) {
-      // Check if the user's message is a greeting
       const greetings = ["hola", "buenos días", "buenos dias", "buenas tardes", "buenas noches", "hi", "hello"];
       if (greetings.some(greeting => input.toLowerCase().includes(greeting))) {
         setTimeout(() => {
@@ -259,7 +233,6 @@ const Chatbot: React.FC<ChatbotProps> = ({ name = "Ps. Yin" }) => {
           setInitialGreetingDone(true);
         }, 500);
       } else {
-        // If user starts with a question directly
         setInitialGreetingDone(true);
         if (waitingForAppointmentResponse) {
           handleAppointmentResponse(input);
@@ -288,6 +261,102 @@ const Chatbot: React.FC<ChatbotProps> = ({ name = "Ps. Yin" }) => {
     setInput("");
   };
 
+  const checkForSchedulingRequest = (input: string): boolean => {
+    const schedulingKeywords = [
+      "agendar", "agenda", "cita", "reservar", "reserva",
+      "quiero agendar", "deseo agendar", "quisiera agendar",
+      "quiero una cita", "deseo una cita", "necesito una cita", "hora", "agendar hora", "agendar una hora"
+    ];
+    
+    const therapistNames = [
+      "marie", "ignacia", "catalina", "guido", "jissel",
+      "ps marie", "ps ignacia", "ps catalina", "ps guido", "ps jissel",
+      "ps. marie", "ps. ignacia", "ps. catalina", "ps. guido", "ps. jissel"
+    ];
+
+    const input_lower = input.toLowerCase();
+    
+    const hasSchedulingKeyword = schedulingKeywords.some(keyword => 
+      input_lower.includes(keyword.toLowerCase())
+    );
+    
+    const hasTherapistName = therapistNames.some(name => 
+      input_lower.includes(name.toLowerCase())
+    );
+
+    return hasSchedulingKeyword || hasTherapistName;
+  };
+
+  const generateResponse = (userInput: string): string => {
+    if (checkForSchedulingRequest(userInput)) {
+      return "¡Por supuesto! Te ayudo a agendar una cita. ¿Con cuál de nuestros profesionales te gustaría agendar? Tenemos disponibles a:\n- Ps. Marie\n- Ps. Ignacia\n- Ps. Catalina\n- Ps. Guido\n- Ps. Jissel";
+    }
+
+    const lowercaseInput = userInput.toLowerCase();
+
+    for (const pair of qaPairs) {
+      if (pair.keywords.some((keyword) => lowercaseInput.includes(keyword))) {
+        return pair.response;
+      }
+    }
+
+    return "Lo siento, no tengo información específica sobre eso. ¿Puedo ayudarte con algo más relacionado con ansiedad, depresión, terapia, estrés o problemas de sueño? También puedo ayudarte a agendar una cita con nuestros profesionales.";
+  };
+
+  const handleAppointmentResponse = (input: string) => {
+    if (checkPositiveResponse(input)) {
+      const goodbyeMessage: Message = {
+        text: "¡Me alegro mucho! Gracias por confiar en nosotros. Te dirigiré al calendario para que puedas agendar tu cita con el profesional de tu preferencia.",
+        sender: "bot" as const
+      };
+      setMessages(prev => [...prev, goodbyeMessage]);
+      setTimeout(() => {
+        window.open(createGoogleCalendarUrl(), "_blank");
+      }, 1500);
+    } else if (checkNegativeResponse(input)) {
+      setQuestionCount(count => count + 1);
+      const responseMessage: Message = {
+        text: "Entiendo perfectamente. Continuemos conversando y cuando te sientas preparado/a, puedes agendar una cita en el momento que lo consideres adecuado.",
+        sender: "bot" as const
+      };
+      setMessages(prev => [...prev, responseMessage]);
+    }
+    setWaitingForAppointmentResponse(false);
+  };
+
+  const checkPositiveResponse = (input: string): boolean => {
+    const positiveWords = ["si", "sí", "ok", "esta bien", "bien", "claro", "por supuesto", "dale", "bueno"];
+    const lowerInput = input.toLowerCase();
+    return positiveWords.some(word => lowerInput.includes(word));
+  };
+
+  const checkNegativeResponse = (input: string): boolean => {
+    const negativeWords = ["no", "nop", "nel", "después", "despues", "otro día", "otro dia", "más tarde", "mas tarde", "ahora no"];
+    const lowerInput = input.toLowerCase();
+    return negativeWords.some(word => lowerInput.includes(word));
+  };
+
+  const askAboutAppointment = () => {
+    const message: Message = {
+      text: "¿Te gustaría agendar una cita con alguno de nuestros psicólogos? Tenemos disponibles a la Ps. Marie, Ps. Ignacia, Ps. Catalina, Ps. Guido y Ps. Jissel.",
+      sender: "bot" as const
+    };
+    setMessages(prev => [...prev, message]);
+    setWaitingForAppointmentResponse(true);
+    setAskedAboutAppointment(true);
+  };
+
+  const checkForFinalGoodbye = () => {
+    const goodbyeMessage: Message = {
+      text: "Gracias por compartir conmigo. Te animo a que consideres agendar una cita cuando te sientas preparado/a. Nuestros profesionales estarán encantados de ayudarte en tu proceso. ¡Que tengas un excelente día!",
+      sender: "bot" as const
+    };
+    setMessages(prev => [...prev, goodbyeMessage]);
+    setTimeout(() => {
+      setIsOpen(false);
+    }, 5000);
+  };
+
   const checkForNextAction = () => {
     if (!askedAboutAppointment && questionCount >= 4) {
       setTimeout(askAboutAppointment, 1000);
@@ -296,40 +365,12 @@ const Chatbot: React.FC<ChatbotProps> = ({ name = "Ps. Yin" }) => {
     }
   };
 
-  // Function to generate a response based on user input
-  const generateResponse = (userInput: string): string => {
-    if (checkForSchedulingRequest(userInput)) {
-      return "¡Por supuesto! Te ayudo a agendar una cita. ¿Con cuál de nuestros profesionales te gustaría agendar? Tenemos disponibles a:\n- Ps. Marie\n- Ps. Ignacia\n- Ps. Catalina\n- Ps. Guido\n- Ps. Jissel";
-    }
-
-    const lowercaseInput = userInput.toLowerCase();
-
-    // Check if input matches any keywords
-    for (const pair of qaPairs) {
-      if (pair.keywords.some((keyword) => lowercaseInput.includes(keyword))) {
-        return pair.response;
-      }
-    }
-
-    // Default response if no keywords match
-    return "Lo siento, no tengo información específica sobre eso. ¿Puedo ayudarte con algo más relacionado con ansiedad, depresión, terapia, estrés o problemas de sueño? También puedo ayudarte a agendar una cita con nuestros profesionales.";
-  };
-
-  // Handle pressing Enter to send message
-  const handleKeyPress = (e: React.KeyboardEvent) => {
-    if (e.key === "Enter") {
-      handleSend();
-    }
-  };
-
-  // Auto-scroll to the bottom of the chat
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
   return (
     <div className="fixed bottom-5 right-5 z-50">
-      {/* Chat button */}
       {!isOpen && (
         <Button
           onClick={() => setIsOpen(true)}
@@ -339,10 +380,8 @@ const Chatbot: React.FC<ChatbotProps> = ({ name = "Ps. Yin" }) => {
         </Button>
       )}
 
-      {/* Chat window */}
       {isOpen && (
         <div className="bg-white rounded-lg shadow-xl w-80 sm:w-96 flex flex-col overflow-hidden border border-gray-200">
-          {/* Chat header */}
           <div className="bg-blue-600 text-white p-3 flex justify-between items-center">
             <h3 className="font-medium">{name}</h3>
             <Button
@@ -355,7 +394,6 @@ const Chatbot: React.FC<ChatbotProps> = ({ name = "Ps. Yin" }) => {
             </Button>
           </div>
 
-          {/* Chat messages */}
           <div className="flex-1 p-3 overflow-y-auto max-h-80 bg-gray-50">
             {messages.map((message, index) => (
               <div
@@ -372,13 +410,12 @@ const Chatbot: React.FC<ChatbotProps> = ({ name = "Ps. Yin" }) => {
             <div ref={messagesEndRef} />
           </div>
 
-          {/* Chat input */}
           <div className="border-t border-gray-200 p-3 flex">
             <input
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              onKeyPress={handleKeyPress}
+              onKeyPress={(e) => e.key === "Enter" && handleSend()}
               placeholder="Escribe tu pregunta..."
               className="flex-1 border border-gray-300 rounded-l-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             />
