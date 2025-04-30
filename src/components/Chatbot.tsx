@@ -102,7 +102,7 @@ const Chatbot: React.FC<ChatbotProps> = ({ name = "Ps. Yin" }) => {
         "Si sientes que te cuesta manejar el estrés, la ansiedad, la tristeza o cualquier desafío emocional en tu día a día, o si simplemente quieres conocerte mejor, es un buen momento para considerar la terapia.",
     },
     {
-      keywords: ["duración", "duracion", "sesión", "sesion", "tiempo"],
+      keywords: ["duración", "duracion", "tiempo"],
       response:
         "Generalmente, una sesión de terapia dura entre 45 y 60 minutos. La frecuencia de las sesiones puede variar según las necesidades de cada persona.",
     },
