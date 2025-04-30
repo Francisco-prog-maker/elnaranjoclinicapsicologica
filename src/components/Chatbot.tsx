@@ -27,8 +27,8 @@ const Chatbot: React.FC<ChatbotProps> = ({ name = "Ps. Yin" }) => {
   // Predefined Q&A pairs related to clinical psychology
   const qaPairs = [
     {
-      keywords: ["agendar", "agenda", "quiero agendar", "deseo agendar", "cita", "reservar", "reserva"],
-      response: "¡Por supuesto! Te ayudo a agendar una cita. ¿Con cuál de nuestros profesionales te gustaría agendar? Tenemos disponibles a:\n- Ps. Marie\n- Ps. Ignacia\n- Ps. Catalina\n- Ps. Guido\n- Ps. Jissel",
+      keywords: ["agendar", "agenda", "quiero agendar", "deseo agendar", "cita", "reservar", "reserva", "hora", "agendar hora", "agendar una hora", ],
+      response: "¡Por supuesto! Te ayudo a agendar una hora. ¿Con cuál de nuestros profesionales te gustaría agendar? Tenemos disponibles a:\n- Ps. Marie\n- Ps. Ignacia\n- Ps. Catalina\n- Ps. Guido\n- Ps. Jissel",
     },
     {
       keywords: ["ansiedad", "nervios", "preocupación", "preocupacion"],
@@ -41,9 +41,9 @@ const Chatbot: React.FC<ChatbotProps> = ({ name = "Ps. Yin" }) => {
         "La depresión es un trastorno del estado de ánimo que puede manifestarse como tristeza persistente, pérdida de interés y energía. Es importante buscar ayuda profesional si experimentas estos síntomas por más de dos semanas.",
     },
     {
-      keywords: ["terapia", "psicólogo", "psicologo", "tratamiento"],
+      keywords: ["terapia", "psicólogo", "psicologa", "tratamiento"],
       response:
-        "Existen diferentes enfoques terapéuticos como la terapia cognitivo-conductual, psicodinámica, humanista, entre otras. Cada una tiene sus propias técnicas y puede ser más adecuada según tus necesidades específicas.",
+        "¡Por supuesto! Te ayudo a agendar una hora. ¿Con cuál de nuestros profesionales te gustaría agendar? Tenemos disponibles a:\n- Ps. Marie\n- Ps. Ignacia\n- Ps. Catalina\n- Ps. Guido\n- Ps. Jissel",
     },
     {
       keywords: ["estrés", "estres", "agobio", "agobiado", "tensión", "tension"],
@@ -68,7 +68,7 @@ const Chatbot: React.FC<ChatbotProps> = ({ name = "Ps. Yin" }) => {
     {
       keywords: ["elegir", "elijo", "adecuado", "terapeuta"],
       response:
-        "Elige un terapeuta que se adapte a tus necesidades y preferencias personales. Asegúrate de que el terapeuta tenga experiencia en el área que necesitas.",
+        "¡Por supuesto! Te ayudo a agendar una hora. ¿Con cuál de nuestros profesionales te gustaría agendar? Tenemos disponibles a:\n- Ps. Marie\n- Ps. Ignacia\n- Ps. Catalina\n- Ps. Guido\n- Ps. Jissel",
     },
     {
       keywords: ["cuántas", "cuantas", "sesiones", "necesito"],
@@ -195,7 +195,7 @@ const Chatbot: React.FC<ChatbotProps> = ({ name = "Ps. Yin" }) => {
     const schedulingKeywords = [
       "agendar", "agenda", "cita", "reservar", "reserva",
       "quiero agendar", "deseo agendar", "quisiera agendar",
-      "quiero una cita", "deseo una cita", "necesito una cita"
+      "quiero una cita", "deseo una cita", "necesito una cita", "hora", "agendar hora", "agendar una hora"
     ];
     
     const therapistNames = [
