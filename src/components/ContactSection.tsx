@@ -44,7 +44,7 @@ const ContactSection = () => {
   useEffect(() => {
     if (!api) return;
 
-    api.off("select", () => {}); // Añadimos el callback vacío requerido
+    api.off("select", () => {});
 
     const interval = setInterval(() => {
       api.scrollNext();
@@ -61,33 +61,14 @@ const ContactSection = () => {
   }, [api]);
 
   const onSubmit = (data: ContactFormValues) => {
-    // Log form data
-    console.log(data);
+    const subject = `Consulta de ${data.name}`;
+    const body = `Nombre: ${data.name}
+Correo: ${data.email}
+Teléfono: ${data.phone}
+Mensaje: ${data.message}`;
 
-    // Create Google Calendar URL with form data
-    const title = `Cita: ${data.name}`;
-    const description = `Correo: ${data.email}\nTeléfono: ${data.phone}\nMensaje: ${data.message}`;
-
-    // Format date for tomorrow at 10:00 AM
-    const tomorrow = new Date();
-    tomorrow.setDate(tomorrow.getDate() + 1);
-    tomorrow.setHours(10, 0, 0, 0);
-
-    // Set duration to 1 hour
-    const endTime = new Date(tomorrow);
-    endTime.setHours(11, 0, 0, 0);
-
-    // Format dates for Google Calendar URL
-    const startDate = tomorrow.toISOString().replace(/-|:|\.\d+/g, "");
-    const endDate = endTime.toISOString().replace(/-|:|\.\d+/g, "");
-
-    // Construct Google Calendar URL
-    const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&details=${encodeURIComponent(description)}&dates=${startDate}/${endDate}`;
-
-    // Open Google Calendar in a new tab
-    window.open(googleCalendarUrl, "_blank");
-
-    // Reset the form
+    window.location.href = `mailto:clinicapsicologicaelnaranjo@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
     form.reset();
   };
 
