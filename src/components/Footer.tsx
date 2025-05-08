@@ -33,7 +33,7 @@ const Footer = ({
   },
 }: FooterProps) => {
   const handleAgendarCita = () => {
-    window.open("https://encuadrado.com/p/marie-elaine-mackenzie-pelaez/);
+    window.open("https://encuadrado.com/p/marie-elaine-mackenzie-pelaez/");
   };
 
   return (
