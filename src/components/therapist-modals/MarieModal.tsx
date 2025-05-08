@@ -21,7 +21,7 @@ const MarieModal: React.FC<MarieModalProps> = ({
   onClose,
 }) => {
   const handleAgendarCita = () => {
-    window.open("https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0kVGpqbl5P8wkvLD3Bf0i5P1ySMrP028Vp0A_Sim58qH0UfcX5oIZ54sy95yK-Z-QJX4tSS_bj", "_blank");
+    window.open("https://encuadrado.com/p/marie-elaine-mackenzie-pelaez/", "_blank");
   };
 
   return (
