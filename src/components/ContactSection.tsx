@@ -204,7 +204,7 @@ Mensaje: ${data.message}`;
                   <Phone className="h-6 w-6 text-teal-600 mr-4 mt-1" />
                   <div>
                     <h4 className="font-medium text-slate-800">Móvil</h4>
-                    <p className="text-slate-600">(+56) 981835706</p>
+                    <p className="text-slate-600">(+56) 933434628</p>
                   </div>
                 </div>
 

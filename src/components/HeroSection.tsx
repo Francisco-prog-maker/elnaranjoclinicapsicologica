@@ -32,7 +32,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   }, [api]);
 
   const handleAgendarCita = () => {
-    window.open("http://wa.me/56981835706", "_blank");
+    window.open("http://wa.me/56933434628", "_blank");
   };
 
   return (

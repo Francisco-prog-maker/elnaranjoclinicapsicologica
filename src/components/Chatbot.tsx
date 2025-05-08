@@ -26,7 +26,7 @@ const Chatbot: React.FC<ChatbotProps> = ({ name = "Ps. Yin" }) => {
 
   const handleTherapistScheduling = (input: string) => {
     const therapistUrls = {
-      marie: "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0kVGpqbl5P8wkvLD3Bf0i5P1ySMrP028Vp0A_Sim58qH0UfcX5oIZ54sy95yK-Z-QJX4tSS_bj",
+      marie: "https://encuadrado.com/p/marie-elaine-mackenzie-pelaez/",
       ignacia: "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1Wd1dfg2xV3N7m5eKUx8grOZ0-fNY9NK-ayYDuZeCu1GfWQ7mLic-fN4oo3J9iNRA1k_TBl7HA",
       guido: "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0yMz-lI8LM3qheGCCCnCyoDIYdATjmsU5ncA8L6KnOsSiWGy3OEKVXmofhAdFaL7b8jj9nM8hd",
       catalina: "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0buGr6ORjpJQqSZupXD41qiemCqWiHHtRaRqnCL0u9pfAKSTJUTnRWssX9K_4YhfFBzlfT9Y6W",
@@ -197,7 +197,7 @@ const Chatbot: React.FC<ChatbotProps> = ({ name = "Ps. Yin" }) => {
       };
       setMessages(prev => [...prev, message]);
       setTimeout(() => {
-        window.open("http://wa.me/56981835706", "_blank");
+        window.open("http://wa.me/56933434628", "_blank");
       }, 1500);
       return true;
     }
