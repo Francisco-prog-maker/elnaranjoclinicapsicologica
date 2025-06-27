@@ -20,7 +20,7 @@ const IgnaciaModal: React.FC<IgnaciaModalProps> = ({
   onClose,
 }) => {
   const handleAgendarCita = () => {
-    window.open("https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1Wd1dfg2xV3N7m5eKUx8grOZ0-fNY9NK-ayYDuZeCu1GfWQ7mLic-fN4oo3J9iNRA1k_TBl7HA", "_blank");
+    window.open("http://wa.me/56933434628", "_blank");
   };
 
   return (
