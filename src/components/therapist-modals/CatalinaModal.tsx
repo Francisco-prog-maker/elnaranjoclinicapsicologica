@@ -20,7 +20,7 @@ const CatalinaModal: React.FC<CatalinaModalProps> = ({
   onClose,
 }) => {
   const handleAgendarCita = () => {
-    window.open("https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0buGr6ORjpJQqSZupXD41qiemCqWiHHtRaRqnCL0u9pfAKSTJUTnRWssX9K_4YhfFBzlfT9Y6W", "_blank");
+    window.open("http://wa.me/56933434628", "_blank");
   };
 
   return (
