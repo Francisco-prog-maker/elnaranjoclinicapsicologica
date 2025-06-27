@@ -20,7 +20,7 @@ const GuidoModal: React.FC<GuidoModalProps> = ({
   onClose,
 }) => {
   const handleAgendarCita = () => {
-    window.open("https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0yMz-lI8LM3qheGCCCnCyoDIYdATjmsU5ncA8L6KnOsSiWGy3OEKVXmofhAdFaL7b8jj9nM8hd", "_blank");
+    window.open("http://wa.me/56933434628", "_blank");
   };
 
   return (
