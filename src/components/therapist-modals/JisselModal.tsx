@@ -20,7 +20,7 @@ const JisselModal: React.FC<JisselModalProps> = ({
   onClose,
 }) => {
   const handleAgendarCita = () => {
-    window.open("https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1Xj0u8u_ff2QQMWE-oyTtpwO8Cj7wzORoUkmLQoffekthGAg7qtIPEir7w6sboFJYP7KYpv4Yd", "_blank");
+    window.open("http://wa.me/56933434628", "_blank");
   };
 
   return (
